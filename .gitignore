@@ -1,0 +1,5 @@
+# Ignorar arquivos do sistema
+.DS_Store
+
+11_ANALYSIS-NEW/
+11_PAPER/
