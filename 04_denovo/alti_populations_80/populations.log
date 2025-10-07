@@ -1,0 +1,60 @@
+populations v2.64, executed 2025-10-02 14:13:54 (zlib-1.2.11)
+populations -P 04_denovo/alti -O 04_denovo/alti_populations -M popmap-alt80 -R 0.8 --min-maf 0.05 --write-single-snp --vcf --fstats -t 16
+Locus/sample distributions will be written to '04_denovo/alti_populations/populations.log.distribs'.
+populations parameters selected:
+  Percent samples limit per population: 0
+  Locus Population limit: 1
+  Percent samples overall: 0.8
+  Minor allele frequency cutoff: 0.05
+  Maximum observed heterozygosity cutoff: 1
+  Applying Fst correction: none.
+  Pi/Fis kernel smoothing: off
+  F-stats kernel smoothing: off
+  Bootstrap resampling: off
+
+Parsing population map...
+The population map contained 80 samples, 3 population(s), 1 group(s).
+Working on 80 samples.
+Working on 3 population(s):
+    north: 2062150, 2062151, 2062152, 2062154, 2062164, 2062165, 2062166, 2062167, 2062168, 2062169, 2062170, 2062171, 2062172, 2062173, 
+           2062174, 2062175, 2062176, 2062177, 2062178, 2062179, 2062180, 2062181, 2062182, 2062183, 2062185, 2062186, 2062187, 2062343
+    south: 2062188, 2062189, 2062191, 2062192, 2062196, 2062198, 2062199, 2062200, 2062202, 2062204, 2062205, 2062206, 2062207, 2062208, 
+           2062209, 2062210, 2062211, 2062212, 2062213, 2062215, 2062216, 2062217, 2062218, 2062219, 2062220, 2062221, 2062222, 2062223, 
+           2062224, 2062225, 2062226, 2062230, 2062231, 2062232, 2062233, 2062234, 2062235, 2062236, 2062237, 2062238, 2062239, 2070207
+    west: 2062155, 2062156, 2062157, 2062158, 2062227, 2062228, 2062229, 2062240, 2062241, 2062242
+Working on 1 group(s) of populations:
+    defaultgrp: north, south, west
+
+SNPs and calls will be written in VCF format to '04_denovo/alti_populations/populations.snps.vcf'
+Raw haplotypes will be written to '04_denovo/alti_populations/populations.haplotypes.tsv'
+Population-level summary statistics will be written to '04_denovo/alti_populations/populations.sumstats.tsv'
+Population-level haplotype summary statistics will be written to '04_denovo/alti_populations/populations.hapstats.tsv'
+
+Processing data in batches:
+  * load a batch of catalog loci and apply filters
+  * compute SNP- and haplotype-wise per-population statistics
+  * compute F-statistics
+  * write the above statistics in the output files
+  * export the genotypes/haplotypes in specified format(s)
+More details in '04_denovo/alti_populations/populations.log.distribs'.
+
+Now processing...
+Batch 1 
+Batch 2 
+Batch 3 
+
+Removed 700481 loci that did not pass sample/population constraints from 721544 loci.
+Kept 21063 loci, composed of 1308254 sites; 72598 of those sites were filtered, 10323 variant sites remained.
+Mean genotyped sites per locus: 62.11bp (stderr 0.01).
+
+Population summary statistics (more detail in populations.sumstats_summary.tsv):
+  north: 25.273 samples per locus; pi: 0.25577; all/variant/polymorphic sites: 1308254/10323/9326; private alleles: 259
+  south: 35.932 samples per locus; pi: 0.24423; all/variant/polymorphic sites: 1308254/10323/9549; private alleles: 314
+  west: 8.9845 samples per locus; pi: 0.22454; all/variant/polymorphic sites: 1308130/10321/6670; private alleles: 277
+
+Population pair divergence statistics (more in populations.fst_summary.tsv and populations.phistats_summary.tsv):
+  north-south: mean Fst: 0.033759; mean Phi_st: 0.047697; mean Fst': 0.021551; mean Dxy: 0.0047187
+  north-west: mean Fst: 0.090284; mean Phi_st: 0.13643; mean Fst': 0.089867; mean Dxy: 0.0053721
+  south-west: mean Fst: 0.081877; mean Phi_st: 0.13881; mean Fst': 0.089703; mean Dxy: 0.0052677
+
+Populations is done.

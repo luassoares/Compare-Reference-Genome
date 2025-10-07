@@ -1,0 +1,60 @@
+populations v2.64, executed 2025-10-02 10:56:18 (zlib-1.2.11)
+/data/users/sousal/programs/stacks-2.64/populations -P ./grp -M ../popmap-grp41 -t 14
+Locus/sample distributions will be written to './grp/populations.log.distribs'.
+populations parameters selected:
+  Percent samples limit per population: 0
+  Locus Population limit: 1
+  Percent samples overall: 0
+  Minor allele frequency cutoff: 0
+  Maximum observed heterozygosity cutoff: 1
+  Applying Fst correction: none.
+  Pi/Fis kernel smoothing: off
+  F-stats kernel smoothing: off
+  Bootstrap resampling: off
+
+Parsing population map...
+The population map contained 41 samples, 4 population(s), 1 group(s).
+Working on 41 samples.
+Working on 4 population(s):
+    Preit: 3005842, 3005852, 3005888, 3005891, 3005899, 3005900, 3005911, 3005912, 3005924, 3006912, 3006944, 3006949
+    Psaxi: 3005841, 3005853, 3005865, 3005877, 3005889, 3005901, 3005903
+    Psche: 2990934, 2990940, 3005839, 3005851, 3005863, 3005874, 3005875, 3005886, 3005887, 3006939, 3006940, 3006945
+    Pteri: 3005843, 3005854, 3005855, 3005867, 3005890, 3005902, 3005914, 3005926, 3006928, 3006934
+Working on 1 group(s) of populations:
+    defaultgrp: Preit, Psaxi, Psche, Pteri
+
+Raw haplotypes will be written to './grp/populations.haplotypes.tsv'
+Population-level summary statistics will be written to './grp/populations.sumstats.tsv'
+Population-level haplotype summary statistics will be written to './grp/populations.hapstats.tsv'
+
+Processing data in batches:
+  * load a batch of catalog loci and apply filters
+  * compute SNP- and haplotype-wise per-population statistics
+  * write the above statistics in the output files
+  * export the genotypes/haplotypes in specified format(s)
+More details in './grp/populations.log.distribs'.
+
+Now processing...
+Batch 1 
+Batch 2 
+Batch 3 
+Batch 4 
+Batch 5 
+Batch 6 
+Batch 7 
+Batch 8 
+Batch 9 
+Batch 10 
+Batch 11 
+Batch 12 
+
+Removed 0 loci that did not pass sample/population constraints from 117224 loci.
+Kept 117224 loci, composed of 11750522 sites; 0 of those sites were filtered, 97028 variant sites remained.
+Mean genotyped sites per locus: 100.24bp (stderr 0.00).
+
+Population summary statistics (more detail in populations.sumstats_summary.tsv):
+  Preit: 4.2125 samples per locus; pi: 0.1288; all/variant/polymorphic sites: 5808944/83362/25177; private alleles: 18534
+  Psaxi: 2.802 samples per locus; pi: 0.098411; all/variant/polymorphic sites: 4083497/72748/14056; private alleles: 9956
+  Psche: 4.3793 samples per locus; pi: 0.15951; all/variant/polymorphic sites: 4994310/84088/31193; private alleles: 27502
+  Pteri: 3.18 samples per locus; pi: 0.1573; all/variant/polymorphic sites: 5275214/77825/25742; private alleles: 25348
+Populations is done.

@@ -1,0 +1,66 @@
+populations v2.64, executed 2025-10-03 13:31:56 (zlib-1.2.11)
+populations -P phylo/ -O phylo_populations_95 -M popmap-phylo29 -R 0.95 --min-maf 0.05 --write-single-snp --vcf --fstats -t 16
+Locus/sample distributions will be written to 'phylo_populations_95/populations.log.distribs'.
+populations parameters selected:
+  Percent samples limit per population: 0
+  Locus Population limit: 1
+  Percent samples overall: 0.95
+  Minor allele frequency cutoff: 0.05
+  Maximum observed heterozygosity cutoff: 1
+  Applying Fst correction: none.
+  Pi/Fis kernel smoothing: off
+  F-stats kernel smoothing: off
+  Bootstrap resampling: off
+
+Parsing population map...
+The population map contained 29 samples, 5 population(s), 1 group(s).
+Working on 29 samples.
+Working on 5 population(s):
+    caes: caes1, caes12, caes3, caes7, caes8, caes9
+    duse: duse11, duse12, duse2, duse23, duse31, duse7
+    miss: miss10, miss36, miss38, miss39, miss40, miss58
+    para: para156, para16, para178, para227, para240, para80
+    send: send114, send117, send121, send54, send9
+Working on 1 group(s) of populations:
+    defaultgrp: caes, duse, miss, para, send
+
+SNPs and calls will be written in VCF format to 'phylo_populations_95/populations.snps.vcf'
+Raw haplotypes will be written to 'phylo_populations_95/populations.haplotypes.tsv'
+Population-level summary statistics will be written to 'phylo_populations_95/populations.sumstats.tsv'
+Population-level haplotype summary statistics will be written to 'phylo_populations_95/populations.hapstats.tsv'
+
+Processing data in batches:
+  * load a batch of catalog loci and apply filters
+  * compute SNP- and haplotype-wise per-population statistics
+  * compute F-statistics
+  * write the above statistics in the output files
+  * export the genotypes/haplotypes in specified format(s)
+More details in 'phylo_populations_95/populations.log.distribs'.
+
+Now processing...
+Batch 1 
+
+Removed 236514 loci that did not pass sample/population constraints from 239731 loci.
+Kept 3217 loci, composed of 203136 sites; 7576 of those sites were filtered, 2014 variant sites remained.
+Mean genotyped sites per locus: 63.14bp (stderr 0.02).
+
+Population summary statistics (more detail in populations.sumstats_summary.tsv):
+  caes: 5.9682 samples per locus; pi: 0.11941; all/variant/polymorphic sites: 203136/2014/609; private alleles: 319
+  duse: 5.6698 samples per locus; pi: 0.12929; all/variant/polymorphic sites: 203136/2014/661; private alleles: 204
+  miss: 5.7979 samples per locus; pi: 0.13483; all/variant/polymorphic sites: 203136/2014/684; private alleles: 303
+  para: 5.9598 samples per locus; pi: 0.12873; all/variant/polymorphic sites: 203136/2014/696; private alleles: 241
+  send: 4.9265 samples per locus; pi: 0.12145; all/variant/polymorphic sites: 203136/2014/620; private alleles: 158
+
+Population pair divergence statistics (more in populations.fst_summary.tsv and populations.phistats_summary.tsv):
+  caes-duse: mean Fst: 0.29663; mean Phi_st: 0.34407; mean Fst': 0.27096; mean Dxy: 0.0070993
+  caes-miss: mean Fst: 0.34764; mean Phi_st: 0.40306; mean Fst': 0.32946; mean Dxy: 0.0077191
+  caes-para: mean Fst: 0.33115; mean Phi_st: 0.38528; mean Fst': 0.31911; mean Dxy: 0.0076523
+  caes-send: mean Fst: 0.30901; mean Phi_st: 0.35591; mean Fst': 0.2877; mean Dxy: 0.0072912
+  duse-miss: mean Fst: 0.26362; mean Phi_st: 0.30617; mean Fst': 0.22968; mean Dxy: 0.0066201
+  duse-para: mean Fst: 0.24261; mean Phi_st: 0.28102; mean Fst': 0.21548; mean Dxy: 0.0065387
+  duse-send: mean Fst: 0.21811; mean Phi_st: 0.24105; mean Fst': 0.17733; mean Dxy: 0.0062003
+  miss-para: mean Fst: 0.31306; mean Phi_st: 0.36654; mean Fst': 0.29752; mean Dxy: 0.0074002
+  miss-send: mean Fst: 0.25902; mean Phi_st: 0.29521; mean Fst': 0.22894; mean Dxy: 0.0067808
+  para-send: mean Fst: 0.26063; mean Phi_st: 0.29914; mean Fst': 0.23986; mean Dxy: 0.0067857
+
+Populations is done.

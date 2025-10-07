@@ -1,0 +1,60 @@
+populations v2.64, executed 2025-10-03 13:31:56 (zlib-1.2.11)
+populations -P grp/ -O grp_populations_95 -M popmap-grp41 -R 0.95 --min-maf 0.05 --write-single-snp --vcf --fstats -t 16
+Locus/sample distributions will be written to 'grp_populations_95/populations.log.distribs'.
+populations parameters selected:
+  Percent samples limit per population: 0
+  Locus Population limit: 1
+  Percent samples overall: 0.95
+  Minor allele frequency cutoff: 0.05
+  Maximum observed heterozygosity cutoff: 1
+  Applying Fst correction: none.
+  Pi/Fis kernel smoothing: off
+  F-stats kernel smoothing: off
+  Bootstrap resampling: off
+
+Parsing population map...
+The population map contained 41 samples, 4 population(s), 1 group(s).
+Working on 41 samples.
+Working on 4 population(s):
+    Preit: 3005842, 3005852, 3005888, 3005891, 3005899, 3005900, 3005911, 3005912, 3005924, 3006912, 3006944, 3006949
+    Psaxi: 3005841, 3005853, 3005865, 3005877, 3005889, 3005901, 3005903
+    Psche: 2990934, 2990940, 3005839, 3005851, 3005863, 3005874, 3005875, 3005886, 3005887, 3006939, 3006940, 3006945
+    Pteri: 3005843, 3005854, 3005855, 3005867, 3005890, 3005902, 3005914, 3005926, 3006928, 3006934
+Working on 1 group(s) of populations:
+    defaultgrp: Preit, Psaxi, Psche, Pteri
+
+SNPs and calls will be written in VCF format to 'grp_populations_95/populations.snps.vcf'
+Raw haplotypes will be written to 'grp_populations_95/populations.haplotypes.tsv'
+Population-level summary statistics will be written to 'grp_populations_95/populations.sumstats.tsv'
+Population-level haplotype summary statistics will be written to 'grp_populations_95/populations.hapstats.tsv'
+
+Processing data in batches:
+  * load a batch of catalog loci and apply filters
+  * compute SNP- and haplotype-wise per-population statistics
+  * compute F-statistics
+  * write the above statistics in the output files
+  * export the genotypes/haplotypes in specified format(s)
+More details in 'grp_populations_95/populations.log.distribs'.
+
+Now processing...
+Batch 1 
+
+Removed 117171 loci that did not pass sample/population constraints from 117224 loci.
+Kept 53 loci, composed of 5417 sites; 61 of those sites were filtered, 16 variant sites remained.
+Mean genotyped sites per locus: 102.21bp (stderr 0.18).
+
+Population summary statistics (more detail in populations.sumstats_summary.tsv):
+  Preit: 11.812 samples per locus; pi: 0.062726; all/variant/polymorphic sites: 5417/16/3; private alleles: 1
+  Psaxi: 6.625 samples per locus; pi: 0.1135; all/variant/polymorphic sites: 5417/16/5; private alleles: 1
+  Psche: 11.375 samples per locus; pi: 0.14819; all/variant/polymorphic sites: 5417/16/6; private alleles: 2
+  Pteri: 9.75 samples per locus; pi: 0.18618; all/variant/polymorphic sites: 5417/16/8; private alleles: 4
+
+Population pair divergence statistics (more in populations.fst_summary.tsv and populations.phistats_summary.tsv):
+  Preit-Psaxi: mean Fst: 0.15659; mean Phi_st: 0.22367; mean Fst': 0.13516; mean Dxy: 0.0030437
+  Preit-Psche: mean Fst: 0.43686; mean Phi_st: 0.50242; mean Fst': 0.41039; mean Dxy: 0.005223
+  Preit-Pteri: mean Fst: 0.44726; mean Phi_st: 0.5186; mean Fst': 0.43447; mean Dxy: 0.0053471
+  Psaxi-Psche: mean Fst: 0.39144; mean Phi_st: 0.468; mean Fst': 0.38766; mean Dxy: 0.0052354
+  Psaxi-Pteri: mean Fst: 0.35114; mean Phi_st: 0.41673; mean Fst': 0.33822; mean Dxy: 0.0047681
+  Psche-Pteri: mean Fst: 0.26101; mean Phi_st: 0.31555; mean Fst': 0.23291; mean Dxy: 0.0043725
+
+Populations is done.

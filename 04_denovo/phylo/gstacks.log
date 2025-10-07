@@ -1,0 +1,28 @@
+gstacks v2.64, executed 2025-10-02 12:55:53 (zlib-1.2.11)
+/data/users/sousal/programs/stacks-2.64/gstacks -P ./phylo -M ../popmap-phylo29 -t 20
+Locus/sample distributions will be written to './phylo/gstacks.log.distribs'.
+
+Configuration for this run:
+  Input mode: denovo
+  Population map: '../popmap-phylo29'
+  Input files: 29, e.g. './phylo/caes1.matches.bam'
+  Output to: './phylo/'
+  Model: marukilow (var_alpha: 0.01, gt_alpha: 0.05)
+
+Reading BAM headers...
+Processing all loci...
+1%...
+2%...
+5%...
+10%...
+20%...
+50%...
+100%
+Input appears to be single-end (no paired-end reads were seen).
+
+Genotyped 239731 loci:
+  effective per-sample coverage: mean=15.7x, stdev=2.0x, min=12.5x, max=23.4x
+  mean number of sites per locus: 60.4
+  a consistent phasing was found for 29434 of out 32370 (90.9%) diploid loci needing phasing
+
+gstacks is done.
