@@ -15,3 +15,5 @@ populations.phistats*
 *.calls
 *.fa.gz
 *.sumstats.tsv
+**/populations.fst_*.tsv
+!**/populations.fst_summary.tsv
