@@ -14,3 +14,4 @@ populations.phistats*
 *.bam
 *.calls
 *.fa.gz
+*.sumstats.tsv
