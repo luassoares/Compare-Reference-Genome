@@ -9,4 +9,8 @@
 *.hapstats.tsv
 *.distribs
 populations.phistats*
-snps.vcf
+*snps.vcf
+*.tsv.gz
+*.bam
+*.calls
+*.fa.gz
