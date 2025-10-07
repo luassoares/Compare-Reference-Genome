@@ -1,0 +1,8 @@
+#!/bin/bash
+    for n in 8 9 10;
+    do
+        out=denovo-ALT.M${n}.n${n};
+        echo $out;
+        mkdir -p $out;
+        denovo_map.pl --samples ../../02_filtered-adaptor-rmv-q30-l60-L60/  --popmap ../popmap-sub20-alti.txt -o ./$out -M $n -n $n -T 14 --min-samples-per-pop 0.8;
+    done
