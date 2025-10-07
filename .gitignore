@@ -3,3 +3,10 @@
 
 11_ANALYSIS-NEW/
 11_PAPER/
+
+#To files from populations not to push
+*.haplotypes.tsv
+*.hapstats.tsv
+*.distribs
+populations.phistats*
+snps.vcf
