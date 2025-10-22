@@ -1,0 +1,816 @@
+Found 12 prefixes to process
+Processing: alti_50
+
+Converting file '01_vcfs/alti_50.vcf':
+
+Number of samples in VCF: 80
+Total of genotypes processed: 23821
+Genotypes excluded because they exceeded the amount of missing data allowed: 0
+Genotypes that passed missing data filter but were excluded for being MNPs: 0
+SNPs that passed the filters: 23821
+
+Sample 1 of 80, '2062343', added to the nucleotide matrix(ces).
+Sample 2 of 80, '2062150', added to the nucleotide matrix(ces).
+Sample 3 of 80, '2062151', added to the nucleotide matrix(ces).
+Sample 4 of 80, '2062152', added to the nucleotide matrix(ces).
+Sample 5 of 80, '2062154', added to the nucleotide matrix(ces).
+Sample 6 of 80, '2062164', added to the nucleotide matrix(ces).
+Sample 7 of 80, '2062165', added to the nucleotide matrix(ces).
+Sample 8 of 80, '2062166', added to the nucleotide matrix(ces).
+Sample 9 of 80, '2062167', added to the nucleotide matrix(ces).
+Sample 10 of 80, '2062168', added to the nucleotide matrix(ces).
+Sample 11 of 80, '2062169', added to the nucleotide matrix(ces).
+Sample 12 of 80, '2062170', added to the nucleotide matrix(ces).
+Sample 13 of 80, '2062171', added to the nucleotide matrix(ces).
+Sample 14 of 80, '2062172', added to the nucleotide matrix(ces).
+Sample 15 of 80, '2062173', added to the nucleotide matrix(ces).
+Sample 16 of 80, '2062174', added to the nucleotide matrix(ces).
+Sample 17 of 80, '2062175', added to the nucleotide matrix(ces).
+Sample 18 of 80, '2062176', added to the nucleotide matrix(ces).
+Sample 19 of 80, '2062177', added to the nucleotide matrix(ces).
+Sample 20 of 80, '2062178', added to the nucleotide matrix(ces).
+Sample 21 of 80, '2062179', added to the nucleotide matrix(ces).
+Sample 22 of 80, '2062180', added to the nucleotide matrix(ces).
+Sample 23 of 80, '2062181', added to the nucleotide matrix(ces).
+Sample 24 of 80, '2062182', added to the nucleotide matrix(ces).
+Sample 25 of 80, '2062183', added to the nucleotide matrix(ces).
+Sample 26 of 80, '2062185', added to the nucleotide matrix(ces).
+Sample 27 of 80, '2062186', added to the nucleotide matrix(ces).
+Sample 28 of 80, '2062187', added to the nucleotide matrix(ces).
+Sample 29 of 80, '2062188', added to the nucleotide matrix(ces).
+Sample 30 of 80, '2062189', added to the nucleotide matrix(ces).
+Sample 31 of 80, '2062191', added to the nucleotide matrix(ces).
+Sample 32 of 80, '2062192', added to the nucleotide matrix(ces).
+Sample 33 of 80, '2062196', added to the nucleotide matrix(ces).
+Sample 34 of 80, '2062198', added to the nucleotide matrix(ces).
+Sample 35 of 80, '2062199', added to the nucleotide matrix(ces).
+Sample 36 of 80, '2062200', added to the nucleotide matrix(ces).
+Sample 37 of 80, '2062202', added to the nucleotide matrix(ces).
+Sample 38 of 80, '2062204', added to the nucleotide matrix(ces).
+Sample 39 of 80, '2062205', added to the nucleotide matrix(ces).
+Sample 40 of 80, '2062206', added to the nucleotide matrix(ces).
+Sample 41 of 80, '2062207', added to the nucleotide matrix(ces).
+Sample 42 of 80, '2062208', added to the nucleotide matrix(ces).
+Sample 43 of 80, '2062209', added to the nucleotide matrix(ces).
+Sample 44 of 80, '2062210', added to the nucleotide matrix(ces).
+Sample 45 of 80, '2062211', added to the nucleotide matrix(ces).
+Sample 46 of 80, '2062212', added to the nucleotide matrix(ces).
+Sample 47 of 80, '2062213', added to the nucleotide matrix(ces).
+Sample 48 of 80, '2062215', added to the nucleotide matrix(ces).
+Sample 49 of 80, '2062216', added to the nucleotide matrix(ces).
+Sample 50 of 80, '2062217', added to the nucleotide matrix(ces).
+Sample 51 of 80, '2062218', added to the nucleotide matrix(ces).
+Sample 52 of 80, '2062219', added to the nucleotide matrix(ces).
+Sample 53 of 80, '2062220', added to the nucleotide matrix(ces).
+Sample 54 of 80, '2062221', added to the nucleotide matrix(ces).
+Sample 55 of 80, '2062222', added to the nucleotide matrix(ces).
+Sample 56 of 80, '2062223', added to the nucleotide matrix(ces).
+Sample 57 of 80, '2062224', added to the nucleotide matrix(ces).
+Sample 58 of 80, '2062225', added to the nucleotide matrix(ces).
+Sample 59 of 80, '2062226', added to the nucleotide matrix(ces).
+Sample 60 of 80, '2062230', added to the nucleotide matrix(ces).
+Sample 61 of 80, '2062231', added to the nucleotide matrix(ces).
+Sample 62 of 80, '2062232', added to the nucleotide matrix(ces).
+Sample 63 of 80, '2062233', added to the nucleotide matrix(ces).
+Sample 64 of 80, '2062234', added to the nucleotide matrix(ces).
+Sample 65 of 80, '2062235', added to the nucleotide matrix(ces).
+Sample 66 of 80, '2062236', added to the nucleotide matrix(ces).
+Sample 67 of 80, '2062237', added to the nucleotide matrix(ces).
+Sample 68 of 80, '2062238', added to the nucleotide matrix(ces).
+Sample 69 of 80, '2062239', added to the nucleotide matrix(ces).
+Sample 70 of 80, '2070207', added to the nucleotide matrix(ces).
+Sample 71 of 80, '2062240', added to the nucleotide matrix(ces).
+Sample 72 of 80, '2062241', added to the nucleotide matrix(ces).
+Sample 73 of 80, '2062242', added to the nucleotide matrix(ces).
+Sample 74 of 80, '2062155', added to the nucleotide matrix(ces).
+Sample 75 of 80, '2062156', added to the nucleotide matrix(ces).
+Sample 76 of 80, '2062157', added to the nucleotide matrix(ces).
+Sample 77 of 80, '2062158', added to the nucleotide matrix(ces).
+Sample 78 of 80, '2062227', added to the nucleotide matrix(ces).
+Sample 79 of 80, '2062228', added to the nucleotide matrix(ces).
+Sample 80 of 80, '2062229', added to the nucleotide matrix(ces).
+
+PHYLIP matrix saved to: 04_SPLITSTREE/alti_50.min4.phy
+NEXUS matrix saved to: 04_SPLITSTREE/alti_50.min4.nex
+
+Done!
+
+Completed: alti_50
+
+Processing: alti_80
+
+Converting file '01_vcfs/alti_80.vcf':
+
+Number of samples in VCF: 80
+Total of genotypes processed: 10323
+Genotypes excluded because they exceeded the amount of missing data allowed: 0
+Genotypes that passed missing data filter but were excluded for being MNPs: 0
+SNPs that passed the filters: 10323
+
+Sample 1 of 80, '2062343', added to the nucleotide matrix(ces).
+Sample 2 of 80, '2062150', added to the nucleotide matrix(ces).
+Sample 3 of 80, '2062151', added to the nucleotide matrix(ces).
+Sample 4 of 80, '2062152', added to the nucleotide matrix(ces).
+Sample 5 of 80, '2062154', added to the nucleotide matrix(ces).
+Sample 6 of 80, '2062164', added to the nucleotide matrix(ces).
+Sample 7 of 80, '2062165', added to the nucleotide matrix(ces).
+Sample 8 of 80, '2062166', added to the nucleotide matrix(ces).
+Sample 9 of 80, '2062167', added to the nucleotide matrix(ces).
+Sample 10 of 80, '2062168', added to the nucleotide matrix(ces).
+Sample 11 of 80, '2062169', added to the nucleotide matrix(ces).
+Sample 12 of 80, '2062170', added to the nucleotide matrix(ces).
+Sample 13 of 80, '2062171', added to the nucleotide matrix(ces).
+Sample 14 of 80, '2062172', added to the nucleotide matrix(ces).
+Sample 15 of 80, '2062173', added to the nucleotide matrix(ces).
+Sample 16 of 80, '2062174', added to the nucleotide matrix(ces).
+Sample 17 of 80, '2062175', added to the nucleotide matrix(ces).
+Sample 18 of 80, '2062176', added to the nucleotide matrix(ces).
+Sample 19 of 80, '2062177', added to the nucleotide matrix(ces).
+Sample 20 of 80, '2062178', added to the nucleotide matrix(ces).
+Sample 21 of 80, '2062179', added to the nucleotide matrix(ces).
+Sample 22 of 80, '2062180', added to the nucleotide matrix(ces).
+Sample 23 of 80, '2062181', added to the nucleotide matrix(ces).
+Sample 24 of 80, '2062182', added to the nucleotide matrix(ces).
+Sample 25 of 80, '2062183', added to the nucleotide matrix(ces).
+Sample 26 of 80, '2062185', added to the nucleotide matrix(ces).
+Sample 27 of 80, '2062186', added to the nucleotide matrix(ces).
+Sample 28 of 80, '2062187', added to the nucleotide matrix(ces).
+Sample 29 of 80, '2062188', added to the nucleotide matrix(ces).
+Sample 30 of 80, '2062189', added to the nucleotide matrix(ces).
+Sample 31 of 80, '2062191', added to the nucleotide matrix(ces).
+Sample 32 of 80, '2062192', added to the nucleotide matrix(ces).
+Sample 33 of 80, '2062196', added to the nucleotide matrix(ces).
+Sample 34 of 80, '2062198', added to the nucleotide matrix(ces).
+Sample 35 of 80, '2062199', added to the nucleotide matrix(ces).
+Sample 36 of 80, '2062200', added to the nucleotide matrix(ces).
+Sample 37 of 80, '2062202', added to the nucleotide matrix(ces).
+Sample 38 of 80, '2062204', added to the nucleotide matrix(ces).
+Sample 39 of 80, '2062205', added to the nucleotide matrix(ces).
+Sample 40 of 80, '2062206', added to the nucleotide matrix(ces).
+Sample 41 of 80, '2062207', added to the nucleotide matrix(ces).
+Sample 42 of 80, '2062208', added to the nucleotide matrix(ces).
+Sample 43 of 80, '2062209', added to the nucleotide matrix(ces).
+Sample 44 of 80, '2062210', added to the nucleotide matrix(ces).
+Sample 45 of 80, '2062211', added to the nucleotide matrix(ces).
+Sample 46 of 80, '2062212', added to the nucleotide matrix(ces).
+Sample 47 of 80, '2062213', added to the nucleotide matrix(ces).
+Sample 48 of 80, '2062215', added to the nucleotide matrix(ces).
+Sample 49 of 80, '2062216', added to the nucleotide matrix(ces).
+Sample 50 of 80, '2062217', added to the nucleotide matrix(ces).
+Sample 51 of 80, '2062218', added to the nucleotide matrix(ces).
+Sample 52 of 80, '2062219', added to the nucleotide matrix(ces).
+Sample 53 of 80, '2062220', added to the nucleotide matrix(ces).
+Sample 54 of 80, '2062221', added to the nucleotide matrix(ces).
+Sample 55 of 80, '2062222', added to the nucleotide matrix(ces).
+Sample 56 of 80, '2062223', added to the nucleotide matrix(ces).
+Sample 57 of 80, '2062224', added to the nucleotide matrix(ces).
+Sample 58 of 80, '2062225', added to the nucleotide matrix(ces).
+Sample 59 of 80, '2062226', added to the nucleotide matrix(ces).
+Sample 60 of 80, '2062230', added to the nucleotide matrix(ces).
+Sample 61 of 80, '2062231', added to the nucleotide matrix(ces).
+Sample 62 of 80, '2062232', added to the nucleotide matrix(ces).
+Sample 63 of 80, '2062233', added to the nucleotide matrix(ces).
+Sample 64 of 80, '2062234', added to the nucleotide matrix(ces).
+Sample 65 of 80, '2062235', added to the nucleotide matrix(ces).
+Sample 66 of 80, '2062236', added to the nucleotide matrix(ces).
+Sample 67 of 80, '2062237', added to the nucleotide matrix(ces).
+Sample 68 of 80, '2062238', added to the nucleotide matrix(ces).
+Sample 69 of 80, '2062239', added to the nucleotide matrix(ces).
+Sample 70 of 80, '2070207', added to the nucleotide matrix(ces).
+Sample 71 of 80, '2062240', added to the nucleotide matrix(ces).
+Sample 72 of 80, '2062241', added to the nucleotide matrix(ces).
+Sample 73 of 80, '2062242', added to the nucleotide matrix(ces).
+Sample 74 of 80, '2062155', added to the nucleotide matrix(ces).
+Sample 75 of 80, '2062156', added to the nucleotide matrix(ces).
+Sample 76 of 80, '2062157', added to the nucleotide matrix(ces).
+Sample 77 of 80, '2062158', added to the nucleotide matrix(ces).
+Sample 78 of 80, '2062227', added to the nucleotide matrix(ces).
+Sample 79 of 80, '2062228', added to the nucleotide matrix(ces).
+Sample 80 of 80, '2062229', added to the nucleotide matrix(ces).
+
+PHYLIP matrix saved to: 04_SPLITSTREE/alti_80.min4.phy
+NEXUS matrix saved to: 04_SPLITSTREE/alti_80.min4.nex
+
+Done!
+
+Completed: alti_80
+
+Processing: alti_90
+
+Converting file '01_vcfs/alti_90.vcf':
+
+Number of samples in VCF: 80
+Total of genotypes processed: 4175
+Genotypes excluded because they exceeded the amount of missing data allowed: 0
+Genotypes that passed missing data filter but were excluded for being MNPs: 0
+SNPs that passed the filters: 4175
+
+Sample 1 of 80, '2062343', added to the nucleotide matrix(ces).
+Sample 2 of 80, '2062150', added to the nucleotide matrix(ces).
+Sample 3 of 80, '2062151', added to the nucleotide matrix(ces).
+Sample 4 of 80, '2062152', added to the nucleotide matrix(ces).
+Sample 5 of 80, '2062154', added to the nucleotide matrix(ces).
+Sample 6 of 80, '2062164', added to the nucleotide matrix(ces).
+Sample 7 of 80, '2062165', added to the nucleotide matrix(ces).
+Sample 8 of 80, '2062166', added to the nucleotide matrix(ces).
+Sample 9 of 80, '2062167', added to the nucleotide matrix(ces).
+Sample 10 of 80, '2062168', added to the nucleotide matrix(ces).
+Sample 11 of 80, '2062169', added to the nucleotide matrix(ces).
+Sample 12 of 80, '2062170', added to the nucleotide matrix(ces).
+Sample 13 of 80, '2062171', added to the nucleotide matrix(ces).
+Sample 14 of 80, '2062172', added to the nucleotide matrix(ces).
+Sample 15 of 80, '2062173', added to the nucleotide matrix(ces).
+Sample 16 of 80, '2062174', added to the nucleotide matrix(ces).
+Sample 17 of 80, '2062175', added to the nucleotide matrix(ces).
+Sample 18 of 80, '2062176', added to the nucleotide matrix(ces).
+Sample 19 of 80, '2062177', added to the nucleotide matrix(ces).
+Sample 20 of 80, '2062178', added to the nucleotide matrix(ces).
+Sample 21 of 80, '2062179', added to the nucleotide matrix(ces).
+Sample 22 of 80, '2062180', added to the nucleotide matrix(ces).
+Sample 23 of 80, '2062181', added to the nucleotide matrix(ces).
+Sample 24 of 80, '2062182', added to the nucleotide matrix(ces).
+Sample 25 of 80, '2062183', added to the nucleotide matrix(ces).
+Sample 26 of 80, '2062185', added to the nucleotide matrix(ces).
+Sample 27 of 80, '2062186', added to the nucleotide matrix(ces).
+Sample 28 of 80, '2062187', added to the nucleotide matrix(ces).
+Sample 29 of 80, '2062188', added to the nucleotide matrix(ces).
+Sample 30 of 80, '2062189', added to the nucleotide matrix(ces).
+Sample 31 of 80, '2062191', added to the nucleotide matrix(ces).
+Sample 32 of 80, '2062192', added to the nucleotide matrix(ces).
+Sample 33 of 80, '2062196', added to the nucleotide matrix(ces).
+Sample 34 of 80, '2062198', added to the nucleotide matrix(ces).
+Sample 35 of 80, '2062199', added to the nucleotide matrix(ces).
+Sample 36 of 80, '2062200', added to the nucleotide matrix(ces).
+Sample 37 of 80, '2062202', added to the nucleotide matrix(ces).
+Sample 38 of 80, '2062204', added to the nucleotide matrix(ces).
+Sample 39 of 80, '2062205', added to the nucleotide matrix(ces).
+Sample 40 of 80, '2062206', added to the nucleotide matrix(ces).
+Sample 41 of 80, '2062207', added to the nucleotide matrix(ces).
+Sample 42 of 80, '2062208', added to the nucleotide matrix(ces).
+Sample 43 of 80, '2062209', added to the nucleotide matrix(ces).
+Sample 44 of 80, '2062210', added to the nucleotide matrix(ces).
+Sample 45 of 80, '2062211', added to the nucleotide matrix(ces).
+Sample 46 of 80, '2062212', added to the nucleotide matrix(ces).
+Sample 47 of 80, '2062213', added to the nucleotide matrix(ces).
+Sample 48 of 80, '2062215', added to the nucleotide matrix(ces).
+Sample 49 of 80, '2062216', added to the nucleotide matrix(ces).
+Sample 50 of 80, '2062217', added to the nucleotide matrix(ces).
+Sample 51 of 80, '2062218', added to the nucleotide matrix(ces).
+Sample 52 of 80, '2062219', added to the nucleotide matrix(ces).
+Sample 53 of 80, '2062220', added to the nucleotide matrix(ces).
+Sample 54 of 80, '2062221', added to the nucleotide matrix(ces).
+Sample 55 of 80, '2062222', added to the nucleotide matrix(ces).
+Sample 56 of 80, '2062223', added to the nucleotide matrix(ces).
+Sample 57 of 80, '2062224', added to the nucleotide matrix(ces).
+Sample 58 of 80, '2062225', added to the nucleotide matrix(ces).
+Sample 59 of 80, '2062226', added to the nucleotide matrix(ces).
+Sample 60 of 80, '2062230', added to the nucleotide matrix(ces).
+Sample 61 of 80, '2062231', added to the nucleotide matrix(ces).
+Sample 62 of 80, '2062232', added to the nucleotide matrix(ces).
+Sample 63 of 80, '2062233', added to the nucleotide matrix(ces).
+Sample 64 of 80, '2062234', added to the nucleotide matrix(ces).
+Sample 65 of 80, '2062235', added to the nucleotide matrix(ces).
+Sample 66 of 80, '2062236', added to the nucleotide matrix(ces).
+Sample 67 of 80, '2062237', added to the nucleotide matrix(ces).
+Sample 68 of 80, '2062238', added to the nucleotide matrix(ces).
+Sample 69 of 80, '2062239', added to the nucleotide matrix(ces).
+Sample 70 of 80, '2070207', added to the nucleotide matrix(ces).
+Sample 71 of 80, '2062240', added to the nucleotide matrix(ces).
+Sample 72 of 80, '2062241', added to the nucleotide matrix(ces).
+Sample 73 of 80, '2062242', added to the nucleotide matrix(ces).
+Sample 74 of 80, '2062155', added to the nucleotide matrix(ces).
+Sample 75 of 80, '2062156', added to the nucleotide matrix(ces).
+Sample 76 of 80, '2062157', added to the nucleotide matrix(ces).
+Sample 77 of 80, '2062158', added to the nucleotide matrix(ces).
+Sample 78 of 80, '2062227', added to the nucleotide matrix(ces).
+Sample 79 of 80, '2062228', added to the nucleotide matrix(ces).
+Sample 80 of 80, '2062229', added to the nucleotide matrix(ces).
+
+PHYLIP matrix saved to: 04_SPLITSTREE/alti_90.min4.phy
+NEXUS matrix saved to: 04_SPLITSTREE/alti_90.min4.nex
+
+Done!
+
+Completed: alti_90
+
+Processing: alti_95
+
+Converting file '01_vcfs/alti_95.vcf':
+
+Number of samples in VCF: 80
+Total of genotypes processed: 1199
+Genotypes excluded because they exceeded the amount of missing data allowed: 0
+Genotypes that passed missing data filter but were excluded for being MNPs: 0
+SNPs that passed the filters: 1199
+
+Sample 1 of 80, '2062343', added to the nucleotide matrix(ces).
+Sample 2 of 80, '2062150', added to the nucleotide matrix(ces).
+Sample 3 of 80, '2062151', added to the nucleotide matrix(ces).
+Sample 4 of 80, '2062152', added to the nucleotide matrix(ces).
+Sample 5 of 80, '2062154', added to the nucleotide matrix(ces).
+Sample 6 of 80, '2062164', added to the nucleotide matrix(ces).
+Sample 7 of 80, '2062165', added to the nucleotide matrix(ces).
+Sample 8 of 80, '2062166', added to the nucleotide matrix(ces).
+Sample 9 of 80, '2062167', added to the nucleotide matrix(ces).
+Sample 10 of 80, '2062168', added to the nucleotide matrix(ces).
+Sample 11 of 80, '2062169', added to the nucleotide matrix(ces).
+Sample 12 of 80, '2062170', added to the nucleotide matrix(ces).
+Sample 13 of 80, '2062171', added to the nucleotide matrix(ces).
+Sample 14 of 80, '2062172', added to the nucleotide matrix(ces).
+Sample 15 of 80, '2062173', added to the nucleotide matrix(ces).
+Sample 16 of 80, '2062174', added to the nucleotide matrix(ces).
+Sample 17 of 80, '2062175', added to the nucleotide matrix(ces).
+Sample 18 of 80, '2062176', added to the nucleotide matrix(ces).
+Sample 19 of 80, '2062177', added to the nucleotide matrix(ces).
+Sample 20 of 80, '2062178', added to the nucleotide matrix(ces).
+Sample 21 of 80, '2062179', added to the nucleotide matrix(ces).
+Sample 22 of 80, '2062180', added to the nucleotide matrix(ces).
+Sample 23 of 80, '2062181', added to the nucleotide matrix(ces).
+Sample 24 of 80, '2062182', added to the nucleotide matrix(ces).
+Sample 25 of 80, '2062183', added to the nucleotide matrix(ces).
+Sample 26 of 80, '2062185', added to the nucleotide matrix(ces).
+Sample 27 of 80, '2062186', added to the nucleotide matrix(ces).
+Sample 28 of 80, '2062187', added to the nucleotide matrix(ces).
+Sample 29 of 80, '2062188', added to the nucleotide matrix(ces).
+Sample 30 of 80, '2062189', added to the nucleotide matrix(ces).
+Sample 31 of 80, '2062191', added to the nucleotide matrix(ces).
+Sample 32 of 80, '2062192', added to the nucleotide matrix(ces).
+Sample 33 of 80, '2062196', added to the nucleotide matrix(ces).
+Sample 34 of 80, '2062198', added to the nucleotide matrix(ces).
+Sample 35 of 80, '2062199', added to the nucleotide matrix(ces).
+Sample 36 of 80, '2062200', added to the nucleotide matrix(ces).
+Sample 37 of 80, '2062202', added to the nucleotide matrix(ces).
+Sample 38 of 80, '2062204', added to the nucleotide matrix(ces).
+Sample 39 of 80, '2062205', added to the nucleotide matrix(ces).
+Sample 40 of 80, '2062206', added to the nucleotide matrix(ces).
+Sample 41 of 80, '2062207', added to the nucleotide matrix(ces).
+Sample 42 of 80, '2062208', added to the nucleotide matrix(ces).
+Sample 43 of 80, '2062209', added to the nucleotide matrix(ces).
+Sample 44 of 80, '2062210', added to the nucleotide matrix(ces).
+Sample 45 of 80, '2062211', added to the nucleotide matrix(ces).
+Sample 46 of 80, '2062212', added to the nucleotide matrix(ces).
+Sample 47 of 80, '2062213', added to the nucleotide matrix(ces).
+Sample 48 of 80, '2062215', added to the nucleotide matrix(ces).
+Sample 49 of 80, '2062216', added to the nucleotide matrix(ces).
+Sample 50 of 80, '2062217', added to the nucleotide matrix(ces).
+Sample 51 of 80, '2062218', added to the nucleotide matrix(ces).
+Sample 52 of 80, '2062219', added to the nucleotide matrix(ces).
+Sample 53 of 80, '2062220', added to the nucleotide matrix(ces).
+Sample 54 of 80, '2062221', added to the nucleotide matrix(ces).
+Sample 55 of 80, '2062222', added to the nucleotide matrix(ces).
+Sample 56 of 80, '2062223', added to the nucleotide matrix(ces).
+Sample 57 of 80, '2062224', added to the nucleotide matrix(ces).
+Sample 58 of 80, '2062225', added to the nucleotide matrix(ces).
+Sample 59 of 80, '2062226', added to the nucleotide matrix(ces).
+Sample 60 of 80, '2062230', added to the nucleotide matrix(ces).
+Sample 61 of 80, '2062231', added to the nucleotide matrix(ces).
+Sample 62 of 80, '2062232', added to the nucleotide matrix(ces).
+Sample 63 of 80, '2062233', added to the nucleotide matrix(ces).
+Sample 64 of 80, '2062234', added to the nucleotide matrix(ces).
+Sample 65 of 80, '2062235', added to the nucleotide matrix(ces).
+Sample 66 of 80, '2062236', added to the nucleotide matrix(ces).
+Sample 67 of 80, '2062237', added to the nucleotide matrix(ces).
+Sample 68 of 80, '2062238', added to the nucleotide matrix(ces).
+Sample 69 of 80, '2062239', added to the nucleotide matrix(ces).
+Sample 70 of 80, '2070207', added to the nucleotide matrix(ces).
+Sample 71 of 80, '2062240', added to the nucleotide matrix(ces).
+Sample 72 of 80, '2062241', added to the nucleotide matrix(ces).
+Sample 73 of 80, '2062242', added to the nucleotide matrix(ces).
+Sample 74 of 80, '2062155', added to the nucleotide matrix(ces).
+Sample 75 of 80, '2062156', added to the nucleotide matrix(ces).
+Sample 76 of 80, '2062157', added to the nucleotide matrix(ces).
+Sample 77 of 80, '2062158', added to the nucleotide matrix(ces).
+Sample 78 of 80, '2062227', added to the nucleotide matrix(ces).
+Sample 79 of 80, '2062228', added to the nucleotide matrix(ces).
+Sample 80 of 80, '2062229', added to the nucleotide matrix(ces).
+
+PHYLIP matrix saved to: 04_SPLITSTREE/alti_95.min4.phy
+NEXUS matrix saved to: 04_SPLITSTREE/alti_95.min4.nex
+
+Done!
+
+Completed: alti_95
+
+Processing: grp_50
+
+Converting file '01_vcfs/grp_50.vcf':
+
+Number of samples in VCF: 41
+Total of genotypes processed: 3224
+Genotypes excluded because they exceeded the amount of missing data allowed: 0
+Genotypes that passed missing data filter but were excluded for being MNPs: 0
+SNPs that passed the filters: 3224
+
+Sample 1 of 41, '3005842', added to the nucleotide matrix(ces).
+Sample 2 of 41, '3005924', added to the nucleotide matrix(ces).
+Sample 3 of 41, '3006949', added to the nucleotide matrix(ces).
+Sample 4 of 41, '3005899', added to the nucleotide matrix(ces).
+Sample 5 of 41, '3005912', added to the nucleotide matrix(ces).
+Sample 6 of 41, '3005852', added to the nucleotide matrix(ces).
+Sample 7 of 41, '3006912', added to the nucleotide matrix(ces).
+Sample 8 of 41, '3005888', added to the nucleotide matrix(ces).
+Sample 9 of 41, '3005900', added to the nucleotide matrix(ces).
+Sample 10 of 41, '3005911', added to the nucleotide matrix(ces).
+Sample 11 of 41, '3005891', added to the nucleotide matrix(ces).
+Sample 12 of 41, '3006944', added to the nucleotide matrix(ces).
+Sample 13 of 41, '3005889', added to the nucleotide matrix(ces).
+Sample 14 of 41, '3005901', added to the nucleotide matrix(ces).
+Sample 15 of 41, '3005903', added to the nucleotide matrix(ces).
+Sample 16 of 41, '3005877', added to the nucleotide matrix(ces).
+Sample 17 of 41, '3005841', added to the nucleotide matrix(ces).
+Sample 18 of 41, '3005853', added to the nucleotide matrix(ces).
+Sample 19 of 41, '3005865', added to the nucleotide matrix(ces).
+Sample 20 of 41, '3005874', added to the nucleotide matrix(ces).
+Sample 21 of 41, '3006945', added to the nucleotide matrix(ces).
+Sample 22 of 41, '2990934', added to the nucleotide matrix(ces).
+Sample 23 of 41, '3005875', added to the nucleotide matrix(ces).
+Sample 24 of 41, '3005887', added to the nucleotide matrix(ces).
+Sample 25 of 41, '2990940', added to the nucleotide matrix(ces).
+Sample 26 of 41, '3005851', added to the nucleotide matrix(ces).
+Sample 27 of 41, '3005886', added to the nucleotide matrix(ces).
+Sample 28 of 41, '3005839', added to the nucleotide matrix(ces).
+Sample 29 of 41, '3006940', added to the nucleotide matrix(ces).
+Sample 30 of 41, '3005863', added to the nucleotide matrix(ces).
+Sample 31 of 41, '3006939', added to the nucleotide matrix(ces).
+Sample 32 of 41, '3005890', added to the nucleotide matrix(ces).
+Sample 33 of 41, '3005914', added to the nucleotide matrix(ces).
+Sample 34 of 41, '3005902', added to the nucleotide matrix(ces).
+Sample 35 of 41, '3005926', added to the nucleotide matrix(ces).
+Sample 36 of 41, '3005843', added to the nucleotide matrix(ces).
+Sample 37 of 41, '3005855', added to the nucleotide matrix(ces).
+Sample 38 of 41, '3005867', added to the nucleotide matrix(ces).
+Sample 39 of 41, '3005854', added to the nucleotide matrix(ces).
+Sample 40 of 41, '3006928', added to the nucleotide matrix(ces).
+Sample 41 of 41, '3006934', added to the nucleotide matrix(ces).
+
+PHYLIP matrix saved to: 04_SPLITSTREE/grp_50.min4.phy
+NEXUS matrix saved to: 04_SPLITSTREE/grp_50.min4.nex
+
+Done!
+
+Completed: grp_50
+
+Processing: grp_80
+
+Converting file '01_vcfs/grp_80.vcf':
+
+Number of samples in VCF: 41
+Total of genotypes processed: 257
+Genotypes excluded because they exceeded the amount of missing data allowed: 0
+Genotypes that passed missing data filter but were excluded for being MNPs: 0
+SNPs that passed the filters: 257
+
+Sample 1 of 41, '3005842', added to the nucleotide matrix(ces).
+Sample 2 of 41, '3005924', added to the nucleotide matrix(ces).
+Sample 3 of 41, '3006949', added to the nucleotide matrix(ces).
+Sample 4 of 41, '3005899', added to the nucleotide matrix(ces).
+Sample 5 of 41, '3005912', added to the nucleotide matrix(ces).
+Sample 6 of 41, '3005852', added to the nucleotide matrix(ces).
+Sample 7 of 41, '3006912', added to the nucleotide matrix(ces).
+Sample 8 of 41, '3005888', added to the nucleotide matrix(ces).
+Sample 9 of 41, '3005900', added to the nucleotide matrix(ces).
+Sample 10 of 41, '3005911', added to the nucleotide matrix(ces).
+Sample 11 of 41, '3005891', added to the nucleotide matrix(ces).
+Sample 12 of 41, '3006944', added to the nucleotide matrix(ces).
+Sample 13 of 41, '3005889', added to the nucleotide matrix(ces).
+Sample 14 of 41, '3005901', added to the nucleotide matrix(ces).
+Sample 15 of 41, '3005903', added to the nucleotide matrix(ces).
+Sample 16 of 41, '3005877', added to the nucleotide matrix(ces).
+Sample 17 of 41, '3005841', added to the nucleotide matrix(ces).
+Sample 18 of 41, '3005853', added to the nucleotide matrix(ces).
+Sample 19 of 41, '3005865', added to the nucleotide matrix(ces).
+Sample 20 of 41, '3005874', added to the nucleotide matrix(ces).
+Sample 21 of 41, '3006945', added to the nucleotide matrix(ces).
+Sample 22 of 41, '2990934', added to the nucleotide matrix(ces).
+Sample 23 of 41, '3005875', added to the nucleotide matrix(ces).
+Sample 24 of 41, '3005887', added to the nucleotide matrix(ces).
+Sample 25 of 41, '2990940', added to the nucleotide matrix(ces).
+Sample 26 of 41, '3005851', added to the nucleotide matrix(ces).
+Sample 27 of 41, '3005886', added to the nucleotide matrix(ces).
+Sample 28 of 41, '3005839', added to the nucleotide matrix(ces).
+Sample 29 of 41, '3006940', added to the nucleotide matrix(ces).
+Sample 30 of 41, '3005863', added to the nucleotide matrix(ces).
+Sample 31 of 41, '3006939', added to the nucleotide matrix(ces).
+Sample 32 of 41, '3005890', added to the nucleotide matrix(ces).
+Sample 33 of 41, '3005914', added to the nucleotide matrix(ces).
+Sample 34 of 41, '3005902', added to the nucleotide matrix(ces).
+Sample 35 of 41, '3005926', added to the nucleotide matrix(ces).
+Sample 36 of 41, '3005843', added to the nucleotide matrix(ces).
+Sample 37 of 41, '3005855', added to the nucleotide matrix(ces).
+Sample 38 of 41, '3005867', added to the nucleotide matrix(ces).
+Sample 39 of 41, '3005854', added to the nucleotide matrix(ces).
+Sample 40 of 41, '3006928', added to the nucleotide matrix(ces).
+Sample 41 of 41, '3006934', added to the nucleotide matrix(ces).
+
+PHYLIP matrix saved to: 04_SPLITSTREE/grp_80.min4.phy
+NEXUS matrix saved to: 04_SPLITSTREE/grp_80.min4.nex
+
+Done!
+
+Completed: grp_80
+
+Processing: grp_90
+
+Converting file '01_vcfs/grp_90.vcf':
+
+Number of samples in VCF: 41
+Total of genotypes processed: 45
+Genotypes excluded because they exceeded the amount of missing data allowed: 0
+Genotypes that passed missing data filter but were excluded for being MNPs: 0
+SNPs that passed the filters: 45
+
+Sample 1 of 41, '3005842', added to the nucleotide matrix(ces).
+Sample 2 of 41, '3005924', added to the nucleotide matrix(ces).
+Sample 3 of 41, '3006949', added to the nucleotide matrix(ces).
+Sample 4 of 41, '3005899', added to the nucleotide matrix(ces).
+Sample 5 of 41, '3005912', added to the nucleotide matrix(ces).
+Sample 6 of 41, '3005852', added to the nucleotide matrix(ces).
+Sample 7 of 41, '3006912', added to the nucleotide matrix(ces).
+Sample 8 of 41, '3005888', added to the nucleotide matrix(ces).
+Sample 9 of 41, '3005900', added to the nucleotide matrix(ces).
+Sample 10 of 41, '3005911', added to the nucleotide matrix(ces).
+Sample 11 of 41, '3005891', added to the nucleotide matrix(ces).
+Sample 12 of 41, '3006944', added to the nucleotide matrix(ces).
+Sample 13 of 41, '3005889', added to the nucleotide matrix(ces).
+Sample 14 of 41, '3005901', added to the nucleotide matrix(ces).
+Sample 15 of 41, '3005903', added to the nucleotide matrix(ces).
+Sample 16 of 41, '3005877', added to the nucleotide matrix(ces).
+Sample 17 of 41, '3005841', added to the nucleotide matrix(ces).
+Sample 18 of 41, '3005853', added to the nucleotide matrix(ces).
+Sample 19 of 41, '3005865', added to the nucleotide matrix(ces).
+Sample 20 of 41, '3005874', added to the nucleotide matrix(ces).
+Sample 21 of 41, '3006945', added to the nucleotide matrix(ces).
+Sample 22 of 41, '2990934', added to the nucleotide matrix(ces).
+Sample 23 of 41, '3005875', added to the nucleotide matrix(ces).
+Sample 24 of 41, '3005887', added to the nucleotide matrix(ces).
+Sample 25 of 41, '2990940', added to the nucleotide matrix(ces).
+Sample 26 of 41, '3005851', added to the nucleotide matrix(ces).
+Sample 27 of 41, '3005886', added to the nucleotide matrix(ces).
+Sample 28 of 41, '3005839', added to the nucleotide matrix(ces).
+Sample 29 of 41, '3006940', added to the nucleotide matrix(ces).
+Sample 30 of 41, '3005863', added to the nucleotide matrix(ces).
+Sample 31 of 41, '3006939', added to the nucleotide matrix(ces).
+Sample 32 of 41, '3005890', added to the nucleotide matrix(ces).
+Sample 33 of 41, '3005914', added to the nucleotide matrix(ces).
+Sample 34 of 41, '3005902', added to the nucleotide matrix(ces).
+Sample 35 of 41, '3005926', added to the nucleotide matrix(ces).
+Sample 36 of 41, '3005843', added to the nucleotide matrix(ces).
+Sample 37 of 41, '3005855', added to the nucleotide matrix(ces).
+Sample 38 of 41, '3005867', added to the nucleotide matrix(ces).
+Sample 39 of 41, '3005854', added to the nucleotide matrix(ces).
+Sample 40 of 41, '3006928', added to the nucleotide matrix(ces).
+Sample 41 of 41, '3006934', added to the nucleotide matrix(ces).
+
+PHYLIP matrix saved to: 04_SPLITSTREE/grp_90.min4.phy
+NEXUS matrix saved to: 04_SPLITSTREE/grp_90.min4.nex
+
+Done!
+
+Completed: grp_90
+
+Processing: grp_95
+
+Converting file '01_vcfs/grp_95.vcf':
+
+Number of samples in VCF: 41
+Total of genotypes processed: 16
+Genotypes excluded because they exceeded the amount of missing data allowed: 0
+Genotypes that passed missing data filter but were excluded for being MNPs: 0
+SNPs that passed the filters: 16
+
+Sample 1 of 41, '3005842', added to the nucleotide matrix(ces).
+Sample 2 of 41, '3005924', added to the nucleotide matrix(ces).
+Sample 3 of 41, '3006949', added to the nucleotide matrix(ces).
+Sample 4 of 41, '3005899', added to the nucleotide matrix(ces).
+Sample 5 of 41, '3005912', added to the nucleotide matrix(ces).
+Sample 6 of 41, '3005852', added to the nucleotide matrix(ces).
+Sample 7 of 41, '3006912', added to the nucleotide matrix(ces).
+Sample 8 of 41, '3005888', added to the nucleotide matrix(ces).
+Sample 9 of 41, '3005900', added to the nucleotide matrix(ces).
+Sample 10 of 41, '3005911', added to the nucleotide matrix(ces).
+Sample 11 of 41, '3005891', added to the nucleotide matrix(ces).
+Sample 12 of 41, '3006944', added to the nucleotide matrix(ces).
+Sample 13 of 41, '3005889', added to the nucleotide matrix(ces).
+Sample 14 of 41, '3005901', added to the nucleotide matrix(ces).
+Sample 15 of 41, '3005903', added to the nucleotide matrix(ces).
+Sample 16 of 41, '3005877', added to the nucleotide matrix(ces).
+Sample 17 of 41, '3005841', added to the nucleotide matrix(ces).
+Sample 18 of 41, '3005853', added to the nucleotide matrix(ces).
+Sample 19 of 41, '3005865', added to the nucleotide matrix(ces).
+Sample 20 of 41, '3005874', added to the nucleotide matrix(ces).
+Sample 21 of 41, '3006945', added to the nucleotide matrix(ces).
+Sample 22 of 41, '2990934', added to the nucleotide matrix(ces).
+Sample 23 of 41, '3005875', added to the nucleotide matrix(ces).
+Sample 24 of 41, '3005887', added to the nucleotide matrix(ces).
+Sample 25 of 41, '2990940', added to the nucleotide matrix(ces).
+Sample 26 of 41, '3005851', added to the nucleotide matrix(ces).
+Sample 27 of 41, '3005886', added to the nucleotide matrix(ces).
+Sample 28 of 41, '3005839', added to the nucleotide matrix(ces).
+Sample 29 of 41, '3006940', added to the nucleotide matrix(ces).
+Sample 30 of 41, '3005863', added to the nucleotide matrix(ces).
+Sample 31 of 41, '3006939', added to the nucleotide matrix(ces).
+Sample 32 of 41, '3005890', added to the nucleotide matrix(ces).
+Sample 33 of 41, '3005914', added to the nucleotide matrix(ces).
+Sample 34 of 41, '3005902', added to the nucleotide matrix(ces).
+Sample 35 of 41, '3005926', added to the nucleotide matrix(ces).
+Sample 36 of 41, '3005843', added to the nucleotide matrix(ces).
+Sample 37 of 41, '3005855', added to the nucleotide matrix(ces).
+Sample 38 of 41, '3005867', added to the nucleotide matrix(ces).
+Sample 39 of 41, '3005854', added to the nucleotide matrix(ces).
+Sample 40 of 41, '3006928', added to the nucleotide matrix(ces).
+Sample 41 of 41, '3006934', added to the nucleotide matrix(ces).
+
+PHYLIP matrix saved to: 04_SPLITSTREE/grp_95.min4.phy
+NEXUS matrix saved to: 04_SPLITSTREE/grp_95.min4.nex
+
+Done!
+
+Completed: grp_95
+
+Processing: phylo_50
+
+Converting file '01_vcfs/phylo_50.vcf':
+
+Number of samples in VCF: 29
+Total of genotypes processed: 17845
+Genotypes excluded because they exceeded the amount of missing data allowed: 0
+Genotypes that passed missing data filter but were excluded for being MNPs: 0
+SNPs that passed the filters: 17845
+
+Sample 1 of 29, 'caes1', added to the nucleotide matrix(ces).
+Sample 2 of 29, 'caes12', added to the nucleotide matrix(ces).
+Sample 3 of 29, 'caes3', added to the nucleotide matrix(ces).
+Sample 4 of 29, 'caes7', added to the nucleotide matrix(ces).
+Sample 5 of 29, 'caes8', added to the nucleotide matrix(ces).
+Sample 6 of 29, 'caes9', added to the nucleotide matrix(ces).
+Sample 7 of 29, 'duse11', added to the nucleotide matrix(ces).
+Sample 8 of 29, 'duse12', added to the nucleotide matrix(ces).
+Sample 9 of 29, 'duse2', added to the nucleotide matrix(ces).
+Sample 10 of 29, 'duse23', added to the nucleotide matrix(ces).
+Sample 11 of 29, 'duse31', added to the nucleotide matrix(ces).
+Sample 12 of 29, 'duse7', added to the nucleotide matrix(ces).
+Sample 13 of 29, 'miss10', added to the nucleotide matrix(ces).
+Sample 14 of 29, 'miss36', added to the nucleotide matrix(ces).
+Sample 15 of 29, 'miss38', added to the nucleotide matrix(ces).
+Sample 16 of 29, 'miss39', added to the nucleotide matrix(ces).
+Sample 17 of 29, 'miss40', added to the nucleotide matrix(ces).
+Sample 18 of 29, 'miss58', added to the nucleotide matrix(ces).
+Sample 19 of 29, 'para156', added to the nucleotide matrix(ces).
+Sample 20 of 29, 'para16', added to the nucleotide matrix(ces).
+Sample 21 of 29, 'para178', added to the nucleotide matrix(ces).
+Sample 22 of 29, 'para227', added to the nucleotide matrix(ces).
+Sample 23 of 29, 'para240', added to the nucleotide matrix(ces).
+Sample 24 of 29, 'para80', added to the nucleotide matrix(ces).
+Sample 25 of 29, 'send114', added to the nucleotide matrix(ces).
+Sample 26 of 29, 'send117', added to the nucleotide matrix(ces).
+Sample 27 of 29, 'send121', added to the nucleotide matrix(ces).
+Sample 28 of 29, 'send54', added to the nucleotide matrix(ces).
+Sample 29 of 29, 'send9', added to the nucleotide matrix(ces).
+
+PHYLIP matrix saved to: 04_SPLITSTREE/phylo_50.min4.phy
+NEXUS matrix saved to: 04_SPLITSTREE/phylo_50.min4.nex
+
+Done!
+
+Completed: phylo_50
+
+Processing: phylo_80
+
+Converting file '01_vcfs/phylo_80.vcf':
+
+Number of samples in VCF: 29
+Total of genotypes processed: 7691
+Genotypes excluded because they exceeded the amount of missing data allowed: 0
+Genotypes that passed missing data filter but were excluded for being MNPs: 0
+SNPs that passed the filters: 7691
+
+Sample 1 of 29, 'caes1', added to the nucleotide matrix(ces).
+Sample 2 of 29, 'caes12', added to the nucleotide matrix(ces).
+Sample 3 of 29, 'caes3', added to the nucleotide matrix(ces).
+Sample 4 of 29, 'caes7', added to the nucleotide matrix(ces).
+Sample 5 of 29, 'caes8', added to the nucleotide matrix(ces).
+Sample 6 of 29, 'caes9', added to the nucleotide matrix(ces).
+Sample 7 of 29, 'duse11', added to the nucleotide matrix(ces).
+Sample 8 of 29, 'duse12', added to the nucleotide matrix(ces).
+Sample 9 of 29, 'duse2', added to the nucleotide matrix(ces).
+Sample 10 of 29, 'duse23', added to the nucleotide matrix(ces).
+Sample 11 of 29, 'duse31', added to the nucleotide matrix(ces).
+Sample 12 of 29, 'duse7', added to the nucleotide matrix(ces).
+Sample 13 of 29, 'miss10', added to the nucleotide matrix(ces).
+Sample 14 of 29, 'miss36', added to the nucleotide matrix(ces).
+Sample 15 of 29, 'miss38', added to the nucleotide matrix(ces).
+Sample 16 of 29, 'miss39', added to the nucleotide matrix(ces).
+Sample 17 of 29, 'miss40', added to the nucleotide matrix(ces).
+Sample 18 of 29, 'miss58', added to the nucleotide matrix(ces).
+Sample 19 of 29, 'para156', added to the nucleotide matrix(ces).
+Sample 20 of 29, 'para16', added to the nucleotide matrix(ces).
+Sample 21 of 29, 'para178', added to the nucleotide matrix(ces).
+Sample 22 of 29, 'para227', added to the nucleotide matrix(ces).
+Sample 23 of 29, 'para240', added to the nucleotide matrix(ces).
+Sample 24 of 29, 'para80', added to the nucleotide matrix(ces).
+Sample 25 of 29, 'send114', added to the nucleotide matrix(ces).
+Sample 26 of 29, 'send117', added to the nucleotide matrix(ces).
+Sample 27 of 29, 'send121', added to the nucleotide matrix(ces).
+Sample 28 of 29, 'send54', added to the nucleotide matrix(ces).
+Sample 29 of 29, 'send9', added to the nucleotide matrix(ces).
+
+PHYLIP matrix saved to: 04_SPLITSTREE/phylo_80.min4.phy
+NEXUS matrix saved to: 04_SPLITSTREE/phylo_80.min4.nex
+
+Done!
+
+Completed: phylo_80
+
+Processing: phylo_90
+
+Converting file '01_vcfs/phylo_90.vcf':
+
+Number of samples in VCF: 29
+Total of genotypes processed: 3575
+Genotypes excluded because they exceeded the amount of missing data allowed: 0
+Genotypes that passed missing data filter but were excluded for being MNPs: 0
+SNPs that passed the filters: 3575
+
+Sample 1 of 29, 'caes1', added to the nucleotide matrix(ces).
+Sample 2 of 29, 'caes12', added to the nucleotide matrix(ces).
+Sample 3 of 29, 'caes3', added to the nucleotide matrix(ces).
+Sample 4 of 29, 'caes7', added to the nucleotide matrix(ces).
+Sample 5 of 29, 'caes8', added to the nucleotide matrix(ces).
+Sample 6 of 29, 'caes9', added to the nucleotide matrix(ces).
+Sample 7 of 29, 'duse11', added to the nucleotide matrix(ces).
+Sample 8 of 29, 'duse12', added to the nucleotide matrix(ces).
+Sample 9 of 29, 'duse2', added to the nucleotide matrix(ces).
+Sample 10 of 29, 'duse23', added to the nucleotide matrix(ces).
+Sample 11 of 29, 'duse31', added to the nucleotide matrix(ces).
+Sample 12 of 29, 'duse7', added to the nucleotide matrix(ces).
+Sample 13 of 29, 'miss10', added to the nucleotide matrix(ces).
+Sample 14 of 29, 'miss36', added to the nucleotide matrix(ces).
+Sample 15 of 29, 'miss38', added to the nucleotide matrix(ces).
+Sample 16 of 29, 'miss39', added to the nucleotide matrix(ces).
+Sample 17 of 29, 'miss40', added to the nucleotide matrix(ces).
+Sample 18 of 29, 'miss58', added to the nucleotide matrix(ces).
+Sample 19 of 29, 'para156', added to the nucleotide matrix(ces).
+Sample 20 of 29, 'para16', added to the nucleotide matrix(ces).
+Sample 21 of 29, 'para178', added to the nucleotide matrix(ces).
+Sample 22 of 29, 'para227', added to the nucleotide matrix(ces).
+Sample 23 of 29, 'para240', added to the nucleotide matrix(ces).
+Sample 24 of 29, 'para80', added to the nucleotide matrix(ces).
+Sample 25 of 29, 'send114', added to the nucleotide matrix(ces).
+Sample 26 of 29, 'send117', added to the nucleotide matrix(ces).
+Sample 27 of 29, 'send121', added to the nucleotide matrix(ces).
+Sample 28 of 29, 'send54', added to the nucleotide matrix(ces).
+Sample 29 of 29, 'send9', added to the nucleotide matrix(ces).
+
+PHYLIP matrix saved to: 04_SPLITSTREE/phylo_90.min4.phy
+NEXUS matrix saved to: 04_SPLITSTREE/phylo_90.min4.nex
+
+Done!
+
+Completed: phylo_90
+
+Processing: phylo_95
+
+Converting file '01_vcfs/phylo_95.vcf':
+
+Number of samples in VCF: 29
+Total of genotypes processed: 2014
+Genotypes excluded because they exceeded the amount of missing data allowed: 0
+Genotypes that passed missing data filter but were excluded for being MNPs: 0
+SNPs that passed the filters: 2014
+
+Sample 1 of 29, 'caes1', added to the nucleotide matrix(ces).
+Sample 2 of 29, 'caes12', added to the nucleotide matrix(ces).
+Sample 3 of 29, 'caes3', added to the nucleotide matrix(ces).
+Sample 4 of 29, 'caes7', added to the nucleotide matrix(ces).
+Sample 5 of 29, 'caes8', added to the nucleotide matrix(ces).
+Sample 6 of 29, 'caes9', added to the nucleotide matrix(ces).
+Sample 7 of 29, 'duse11', added to the nucleotide matrix(ces).
+Sample 8 of 29, 'duse12', added to the nucleotide matrix(ces).
+Sample 9 of 29, 'duse2', added to the nucleotide matrix(ces).
+Sample 10 of 29, 'duse23', added to the nucleotide matrix(ces).
+Sample 11 of 29, 'duse31', added to the nucleotide matrix(ces).
+Sample 12 of 29, 'duse7', added to the nucleotide matrix(ces).
+Sample 13 of 29, 'miss10', added to the nucleotide matrix(ces).
+Sample 14 of 29, 'miss36', added to the nucleotide matrix(ces).
+Sample 15 of 29, 'miss38', added to the nucleotide matrix(ces).
+Sample 16 of 29, 'miss39', added to the nucleotide matrix(ces).
+Sample 17 of 29, 'miss40', added to the nucleotide matrix(ces).
+Sample 18 of 29, 'miss58', added to the nucleotide matrix(ces).
+Sample 19 of 29, 'para156', added to the nucleotide matrix(ces).
+Sample 20 of 29, 'para16', added to the nucleotide matrix(ces).
+Sample 21 of 29, 'para178', added to the nucleotide matrix(ces).
+Sample 22 of 29, 'para227', added to the nucleotide matrix(ces).
+Sample 23 of 29, 'para240', added to the nucleotide matrix(ces).
+Sample 24 of 29, 'para80', added to the nucleotide matrix(ces).
+Sample 25 of 29, 'send114', added to the nucleotide matrix(ces).
+Sample 26 of 29, 'send117', added to the nucleotide matrix(ces).
+Sample 27 of 29, 'send121', added to the nucleotide matrix(ces).
+Sample 28 of 29, 'send54', added to the nucleotide matrix(ces).
+Sample 29 of 29, 'send9', added to the nucleotide matrix(ces).
+
+PHYLIP matrix saved to: 04_SPLITSTREE/phylo_95.min4.phy
+NEXUS matrix saved to: 04_SPLITSTREE/phylo_95.min4.nex
+
+Done!
+
+Completed: phylo_95

@@ -1,0 +1,44 @@
+Started processing at 2025-10-08 14:50:27.416532
+Number of prefixes: 12
+
+PROCESSING: alti_50
+SUCCESS: alti_50
+
+PROCESSING: alti_80
+SUCCESS: alti_80
+
+PROCESSING: alti_90
+SUCCESS: alti_90
+
+PROCESSING: alti_95
+SUCCESS: alti_95
+
+PROCESSING: grp_50
+SUCCESS: grp_50
+
+PROCESSING: grp_80
+SUCCESS: grp_80
+
+PROCESSING: grp_90
+SUCCESS: grp_90
+
+PROCESSING: grp_95
+SUCCESS: grp_95
+
+PROCESSING: phylo_50
+SUCCESS: phylo_50
+
+PROCESSING: phylo_80
+SUCCESS: phylo_80
+
+PROCESSING: phylo_90
+SUCCESS: phylo_90
+
+PROCESSING: phylo_95
+SUCCESS: phylo_95
+
+
+=== SUMMARY ===
+Successful: 12
+Failed: 0
+Completed at: 2025-10-08 14:55:45.639421

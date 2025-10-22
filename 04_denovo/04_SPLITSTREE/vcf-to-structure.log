@@ -1,0 +1,325 @@
+Rscript Script-run-PCA-input-fastSTRUCTURE.R vcf_prefixes.txt 
+
+   *****       ***   vcfR   ***       *****
+   This is vcfR 1.15.0 
+     browseVignettes('vcfR') # Documentation
+     citation('vcfR') # Citation
+   *****       *****      *****       *****
+
+Loading required package: ade4
+
+   /// adegenet 2.1.11 is loaded ////////////
+
+   > overview: '?adegenet'
+   > tutorials/doc/questions: 'adegenetWeb()' 
+   > bug reports/feature requests: adegenetIssues()
+
+
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: dartR.data
+**** Welcome to dartR.data [Version 1.0.8 ] ****
+
+Registered S3 method overwritten by 'pegas':
+  method      from
+  print.amova ade4
+Registered S3 method overwritten by 'GGally':
+  method from   
+  +.gg   ggplot2
+Registered S3 method overwritten by 'genetics':
+  method      from 
+  [.haplotype pegas
+**** Welcome to dartR [Version 2.9.7 ] ****
+
+Be aware that owing to CRAN requirements and compatibility reasons not all functions of the package may run after the basic installation, as some packages could still be missing. Hence for a most enjoyable experience we recommend to run the function 
+gl.install.vanilla.dartR()
+This installs all missing and required packages for your version of dartR. In case something fails during installation please refer to this tutorial: https://github.com/green-striped-gecko/dartR/wiki/Installation-tutorial.
+
+For information how to cite dartR, please use:
+citation('dartR')
+Global verbosity is set to: 2
+
+
+**** Have fun using dartR! ****
+
+Attaching package: ‘dartR’
+
+The following objects are masked from ‘package:dartR.data’:
+
+    bandicoot.gl, possums.gl, testset.gl, testset.gs
+
+📊 Processing: alti_50 
+Scanning file to determine attributes.
+File attributes:
+  meta lines: 14
+  header_line: 15
+  variant count: 23821
+  column count: 89
+Meta line 14 read in.
+All meta lines processed.
+gt matrix initialized.
+Character matrix gt created.
+  Character matrix gt rows: 23821
+  Character matrix gt cols: 89
+  skip: 0
+  nrows: 23821
+  row_num: 0
+Processed variant: 23821
+All variants processed
+Starting gl2faststructure 
+  Processing genlight object with SNP data
+Saved faststructure file: 03_fastSTRUCTURE//alti_50.str
+Completed: gl2faststructure 
+📊 Processing: alti_80 
+Scanning file to determine attributes.
+File attributes:
+  meta lines: 14
+  header_line: 15
+  variant count: 10323
+  column count: 89
+Meta line 14 read in.
+All meta lines processed.
+gt matrix initialized.
+Character matrix gt created.
+  Character matrix gt rows: 10323
+  Character matrix gt cols: 89
+  skip: 0
+  nrows: 10323
+  row_num: 0
+Processed variant: 10323
+All variants processed
+Starting gl2faststructure 
+  Processing genlight object with SNP data
+Saved faststructure file: 03_fastSTRUCTURE//alti_80.str
+Completed: gl2faststructure 
+📊 Processing: alti_90 
+Scanning file to determine attributes.
+File attributes:
+  meta lines: 14
+  header_line: 15
+  variant count: 4175
+  column count: 89
+Meta line 14 read in.
+All meta lines processed.
+gt matrix initialized.
+Character matrix gt created.
+  Character matrix gt rows: 4175
+  Character matrix gt cols: 89
+  skip: 0
+  nrows: 4175
+  row_num: 0
+Processed variant: 4175
+All variants processed
+Starting gl2faststructure 
+  Processing genlight object with SNP data
+Saved faststructure file: 03_fastSTRUCTURE//alti_90.str
+Completed: gl2faststructure 
+📊 Processing: alti_95 
+Scanning file to determine attributes.
+File attributes:
+  meta lines: 14
+  header_line: 15
+  variant count: 1199
+  column count: 89
+Meta line 14 read in.
+All meta lines processed.
+gt matrix initialized.
+Character matrix gt created.
+  Character matrix gt rows: 1199
+  Character matrix gt cols: 89
+  skip: 0
+  nrows: 1199
+  row_num: 0
+Processed variant: 1199
+All variants processed
+Starting gl2faststructure 
+  Processing genlight object with SNP data
+Saved faststructure file: 03_fastSTRUCTURE//alti_95.str
+Completed: gl2faststructure 
+📊 Processing: grp_50 
+Scanning file to determine attributes.
+File attributes:
+  meta lines: 14
+  header_line: 15
+  variant count: 3224
+  column count: 50
+Meta line 14 read in.
+All meta lines processed.
+gt matrix initialized.
+Character matrix gt created.
+  Character matrix gt rows: 3224
+  Character matrix gt cols: 50
+  skip: 0
+  nrows: 3224
+  row_num: 0
+Processed variant: 3224
+All variants processed
+Starting gl2faststructure 
+  Processing genlight object with SNP data
+Saved faststructure file: 03_fastSTRUCTURE//grp_50.str
+Completed: gl2faststructure 
+📊 Processing: grp_80 
+Scanning file to determine attributes.
+File attributes:
+  meta lines: 14
+  header_line: 15
+  variant count: 257
+  column count: 50
+Meta line 14 read in.
+All meta lines processed.
+gt matrix initialized.
+Character matrix gt created.
+  Character matrix gt rows: 257
+  Character matrix gt cols: 50
+  skip: 0
+  nrows: 257
+  row_num: 0
+Processed variant: 257
+All variants processed
+Starting gl2faststructure 
+  Processing genlight object with SNP data
+Saved faststructure file: 03_fastSTRUCTURE//grp_80.str
+Completed: gl2faststructure 
+📊 Processing: grp_90 
+Scanning file to determine attributes.
+File attributes:
+  meta lines: 14
+  header_line: 15
+  variant count: 45
+  column count: 50
+Meta line 14 read in.
+All meta lines processed.
+gt matrix initialized.
+Character matrix gt created.
+  Character matrix gt rows: 45
+  Character matrix gt cols: 50
+  skip: 0
+  nrows: 45
+  row_num: 0
+Processed variant: 45
+All variants processed
+Starting gl2faststructure 
+  Processing genlight object with SNP data
+Saved faststructure file: 03_fastSTRUCTURE//grp_90.str
+Completed: gl2faststructure 
+📊 Processing: grp_95 
+Scanning file to determine attributes.
+File attributes:
+  meta lines: 14
+  header_line: 15
+  variant count: 16
+  column count: 50
+Meta line 14 read in.
+All meta lines processed.
+gt matrix initialized.
+Character matrix gt created.
+  Character matrix gt rows: 16
+  Character matrix gt cols: 50
+  skip: 0
+  nrows: 16
+  row_num: 0
+Processed variant: 16
+All variants processed
+Starting gl2faststructure 
+  Processing genlight object with SNP data
+Saved faststructure file: 03_fastSTRUCTURE//grp_95.str
+Completed: gl2faststructure 
+📊 Processing: phylo_50 
+Scanning file to determine attributes.
+File attributes:
+  meta lines: 14
+  header_line: 15
+  variant count: 17845
+  column count: 38
+Meta line 14 read in.
+All meta lines processed.
+gt matrix initialized.
+Character matrix gt created.
+  Character matrix gt rows: 17845
+  Character matrix gt cols: 38
+  skip: 0
+  nrows: 17845
+  row_num: 0
+Processed variant: 17845
+All variants processed
+Starting gl2faststructure 
+  Processing genlight object with SNP data
+Saved faststructure file: 03_fastSTRUCTURE//phylo_50.str
+Completed: gl2faststructure 
+📊 Processing: phylo_80 
+Scanning file to determine attributes.
+File attributes:
+  meta lines: 14
+  header_line: 15
+  variant count: 7691
+  column count: 38
+Meta line 14 read in.
+All meta lines processed.
+gt matrix initialized.
+Character matrix gt created.
+  Character matrix gt rows: 7691
+  Character matrix gt cols: 38
+  skip: 0
+  nrows: 7691
+  row_num: 0
+Processed variant: 7691
+All variants processed
+Starting gl2faststructure 
+  Processing genlight object with SNP data
+Saved faststructure file: 03_fastSTRUCTURE//phylo_80.str
+Completed: gl2faststructure 
+📊 Processing: phylo_90 
+Scanning file to determine attributes.
+File attributes:
+  meta lines: 14
+  header_line: 15
+  variant count: 3575
+  column count: 38
+Meta line 14 read in.
+All meta lines processed.
+gt matrix initialized.
+Character matrix gt created.
+  Character matrix gt rows: 3575
+  Character matrix gt cols: 38
+  skip: 0
+  nrows: 3575
+  row_num: 0
+Processed variant: 3575
+All variants processed
+Starting gl2faststructure 
+  Processing genlight object with SNP data
+Saved faststructure file: 03_fastSTRUCTURE//phylo_90.str
+Completed: gl2faststructure 
+📊 Processing: phylo_95 
+Scanning file to determine attributes.
+File attributes:
+  meta lines: 14
+  header_line: 15
+  variant count: 2014
+  column count: 38
+Meta line 14 read in.
+All meta lines processed.
+gt matrix initialized.
+Character matrix gt created.
+  Character matrix gt rows: 2014
+  Character matrix gt cols: 38
+  skip: 0
+  nrows: 2014
+  row_num: 0
+Processed variant: 2014
+All variants processed
+Starting gl2faststructure 
+  Processing genlight object with SNP data
+Saved faststructure file: 03_fastSTRUCTURE//phylo_95.str
+Completed: gl2faststructure 
+All processing completed!

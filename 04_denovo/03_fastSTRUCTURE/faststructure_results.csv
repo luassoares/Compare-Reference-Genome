@@ -1,0 +1,13 @@
+Group,Parameter,Prefix,Marginal_K,Components_K
+alti,50,alti_50,3,5
+alti,80,alti_80,3,5
+alti,90,alti_90,3,4
+alti,95,alti_95,3,6
+grp,50,grp_50,7,5
+grp,80,grp_80,5,5
+grp,90,grp_90,5,4
+grp,95,grp_95,2,4
+phylo,50,phylo_50,4,4
+phylo,80,phylo_80,4,5
+phylo,90,phylo_90,4,5
+phylo,95,phylo_95,4,5
