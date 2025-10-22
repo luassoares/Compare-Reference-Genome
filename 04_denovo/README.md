@@ -7,7 +7,9 @@ Parameter optimization was carried out on a subset of 20 individuals, running th
 >**Data sets**
 >
 >-**alt**: POP
+>
 >-**grp**: Intra-P4
+>
 >-**phylo** : Inter-C4
 
 ### Parameter optimization
@@ -35,8 +37,11 @@ The optimal parameters identified were -M 3 -n 3, which were used for all groups
 After the optimized de novo assembly, we conducted:
 
 >**PCA**
+>
 >**fastSTRUCTURE**
+>
 >**SPLITSTREE**
+>
 >**Summary statistics**
 
 All notebooks and scripts are named according to their corresponding analyses.
