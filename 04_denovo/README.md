@@ -1,19 +1,17 @@
 # *de novo* approach
-We run the *de novo* approach using STACKS. 
-We used the denovo map.pl Stacks module to identify SNPs from reads. We performed the parameter optimization (Rivera-Colón and Catchen 2022) by running the de novo pipeline multiple times on a subset of 20 individuals, iterating over increasing M/n = 1–9 and per run. This method seeks the assembly parameters (M and n) that maximize the number of R80 loci in the dataset (the number of polymorphic loci present in at least 80% of samples). 
+We performed the de novo analysis using Stacks, following the pipeline described by Rivera-Colón and Catchen (2022). SNPs were identified using the denovo_map.pl module.
+
+Parameter optimization was carried out on a subset of 20 individuals, running the de novo pipeline multiple times with increasing values of M and n (from 1 to 9). This optimization seeks the combination of parameters that maximizes the number of R80 loci—polymorphic loci present in at least 80% of the samples.
 
 > [!NOTE]
->Data sets:
+>**Data sets**
 >
->**alt**: POP
->
->**grp**: Intra-P4
->
->**phylo** : Inter-C4
+>-**alt**: POP
+>-**grp**: Intra-P4
+>-**phylo** : Inter-C4
 
-### The optimization:
-
-For each group we run the shell scripts on ```opt-denvo-alt|grp|phylo```:
+### Parameter optimization
+For each dataset, we ran the following shell script ```opt-denvo-alt|grp|phylo```:
 ```shell
 #!/bin/bash
     for n in 1 2 3 4 5 6 7 8 9 10;
@@ -25,7 +23,7 @@ For each group we run the shell scripts on ```opt-denvo-alt|grp|phylo```:
     done
 ```	
 #### Result
-We run the de novo analysis with -M 3 -n 3 for all groups. 
+The optimal parameters identified were -M 3 -n 3, which were used for all groups. 
 <center>
 	<figure>
    	 <img src="00.OPT-denovo/Result-graph_optmization_denovo_MN.png" width="550"
@@ -34,8 +32,14 @@ We run the de novo analysis with -M 3 -n 3 for all groups.
 </center>
 
 ### Analysis
-We ran PCA, fastSTRUCTURE, SPLISTREE and summaries statistics. The jupyter notebook and scripts are named conform its analysis.
+After the optimized de novo assembly, we conducted:
 
+>**PCA**
+>**fastSTRUCTURE**
+>**SPLITSTREE**
+>**Summary statistics**
+
+All notebooks and scripts are named according to their corresponding analyses.
 
 ### References
 

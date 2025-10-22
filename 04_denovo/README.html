@@ -49,12 +49,11 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="de-novo-approach" class="level1">
 <h1><em>de novo</em> approach</h1>
-<p>We run the <em>de novo</em> approach using STACKS. We used the denovo map.pl Stacks module to identify SNPs from reads. We performed the parameter optimization (Rivera-Colón and Catchen 2022) by running the de novo pipeline multiple times on a subset of 20 individuals, iterating over increasing M/n = 1–9 and per run. This method seeks the assembly parameters (M and n) that maximize the number of R80 loci in the dataset (the number of polymorphic loci present in at least 80% of samples).</p>
+<p>We performed the de novo analysis using Stacks, following the pipeline described by Rivera-Colón and Catchen (2022). SNPs were identified using the denovo_map.pl module.</p>
+<p>Parameter optimization was carried out on a subset of 20 individuals, running the de novo pipeline multiple times with increasing values of M and n (from 1 to 9). This optimization seeks the combination of parameters that maximizes the number of R80 loci—polymorphic loci present in at least 80% of the samples.</p>
 <blockquote class="blockquote">
-<p>[!NOTE] Data sets:</p>
-<p><strong>alt</strong>: POP</p>
-<p><strong>grp</strong>: Intra-P4</p>
-<p><strong>phylo</strong> : Inter-C4</p>
+<p>[!NOTE] <strong>Data sets</strong></p>
+<p>-<strong>alt</strong>: POP -<strong>grp</strong>: Intra-P4 -<strong>phylo</strong> : Inter-C4</p>
 </blockquote>
 <section id="the-optimization" class="level3">
 <h3 class="anchored" data-anchor-id="the-optimization">The optimization:</h3>
