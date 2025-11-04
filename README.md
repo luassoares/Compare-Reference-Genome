@@ -17,24 +17,6 @@ This repository contains the scripts and workflows used to:
 
 
 ---
-
-## Scripts Overview
-
-| Script | Description |
-|--------|--------------|
-| **`script-get-popmap.py`** | Generates and organizes popmap files for all datasets. |
-| **`filter_reads.sh`** | Filters and trims raw RAD-seq reads. |
-| **`map_reads_bwa.sh`** | Maps reads to reference genomes using BWA. |
-| **`merge_bam.sh`** | Merges BAM files per dataset. |
-| **`call_snps_freebayes.sh`** | Calls SNPs using FreeBayes. |
-| **`split_vcfs_bcftools.sh`** | Splits multi-sample VCFs into dataset-specific subsets. |
-| **`filter_vcfs_vcftools.sh`** | Applies SNP filtering criteria (missing data, MAF, thinning). |
-| **`count_snps.sh`** | Counts SNPs per filtered VCF file. |
-| **`populations_analysis.sh`** | Runs population analyses with STACKS `populations`. |
-| **`extract_results.sh`** | Organizes summary outputs into a single folder. |
-| **`pca_analysis.R`** | Performs PCA for all datasets using `vcfR` and `dartR`. |
-
----
 During the analysis the dataset was called differently. For clarity of the paper we changed to:
 
 > [!NOTE]
@@ -191,7 +173,7 @@ done
 **Optimal parameters:** `-M 3 -n 3`
 
 <p align="center">
-  <img src="03_denovo/00_OPT-denovo/Result-graph_optimization_denovo.png" width="500" alt="Optimization results">
+  <img src="03_denovo/00.OPT-denovo/Result-graph_optmization_denovo_MN.png" width="500" alt="Optimization results">
 </p>
 
 ## Downstream Analyses for both
