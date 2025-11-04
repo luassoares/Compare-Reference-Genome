@@ -1,0 +1,12 @@
+alti_50
+alti_80
+alti_90
+alti_95
+grp_50
+grp_80
+grp_90
+grp_95
+phylo_50
+phylo_80
+phylo_90
+phylo_95

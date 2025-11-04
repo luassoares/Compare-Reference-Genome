@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>readme</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="README_files/libs/clipboard/clipboard.min.js"></script>
+<script src="README_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="README_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="README_files/libs/quarto-html/popper.min.js"></script>
+<script src="README_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="README_files/libs/quarto-html/anchor.min.js"></script>
+<link href="README_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="README_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="README_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="README_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="README_files/libs/bootstrap/bootstrap-81267100e462c21b3d6c0d5bf76a3417.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+
+<section id="evaluating-the-impact-of-reference-genome-choice-on-snp-calling-and-population-genomics-in-recently-diverged-species" class="level1">
+<h1>Evaluating the Impact of Reference Genome Choice on SNP Calling and Population Genomics in Recently Diverged Species</h1>
+<section id="abstract" class="level3">
+<h3 class="anchored" data-anchor-id="abstract">Abstract</h3>
+<p>The use of RAD-seq data in population genomics is strongly influenced by bioinformatic processing choices, particularly in SNP discovery and demographic inference. A key decision involves whether to adopt a <em>de novo</em> or reference-based approach, with the latter introducing potential biases depending on the genetic proximity between the reference genome and the focal species. While it is generally recommended to use high-quality genomes from closely related taxa, little is known about how relatedness affects evolutionary inferences, especially in systems of recent and rapid divergence.</p>
+<p>Here, we evaluate how the choice of reference genome influences SNP calling and downstream genetic analyses in recently diverged lineages of <em>Petunia</em> and <em>Calibrachoa</em>. We compare multiple reference genomes that vary in genetic distance from the target species, assessing their impact on population genetic parameters and phylogenetic relationships. Despite differences in SNP counts and dataset composition, overall patterns of genetic diversity, population structure, and evolutionary relationships remained consistent across references. These results suggest that for recently diverged taxa, reference genome choice may be less critical than previously assumed, as genetic similarity within this evolutionary timescale appears sufficient to recover key evolutionary patterns.</p>
+<hr>
+</section>
+<section id="repository-overview" class="level2">
+<h2 class="anchored" data-anchor-id="repository-overview">Repository Overview</h2>
+<p>This repository contains the scripts and workflows used to: 1. Preprocess RAD-seq reads<br>
+2. Perform both reference-based and <em>de novo</em> SNP calling<br>
+3. Filter and analyze resulting VCF files<br>
+4. Run population-level analyses (e.g., F-statistics, PCA)</p>
+<p>Each script is fully annotated for reproducibility and clarity.</p>
+<hr>
+</section>
+<section id="scripts-overview" class="level2">
+<h2 class="anchored" data-anchor-id="scripts-overview">Scripts Overview</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 63%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Script</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong><code>script-get-popmap.py</code></strong></td>
+<td>Generates and organizes popmap files for all datasets.</td>
+</tr>
+<tr class="even">
+<td><strong><code>filter_reads.sh</code></strong></td>
+<td>Filters and trims raw RAD-seq reads.</td>
+</tr>
+<tr class="odd">
+<td><strong><code>map_reads_bwa.sh</code></strong></td>
+<td>Maps reads to reference genomes using BWA.</td>
+</tr>
+<tr class="even">
+<td><strong><code>merge_bam.sh</code></strong></td>
+<td>Merges BAM files per dataset.</td>
+</tr>
+<tr class="odd">
+<td><strong><code>call_snps_freebayes.sh</code></strong></td>
+<td>Calls SNPs using FreeBayes.</td>
+</tr>
+<tr class="even">
+<td><strong><code>split_vcfs_bcftools.sh</code></strong></td>
+<td>Splits multi-sample VCFs into dataset-specific subsets.</td>
+</tr>
+<tr class="odd">
+<td><strong><code>filter_vcfs_vcftools.sh</code></strong></td>
+<td>Applies SNP filtering criteria (missing data, MAF, thinning).</td>
+</tr>
+<tr class="even">
+<td><strong><code>count_snps.sh</code></strong></td>
+<td>Counts SNPs per filtered VCF file.</td>
+</tr>
+<tr class="odd">
+<td><strong><code>populations_analysis.sh</code></strong></td>
+<td>Runs population analyses with STACKS <code>populations</code>.</td>
+</tr>
+<tr class="even">
+<td><strong><code>extract_results.sh</code></strong></td>
+<td>Organizes summary outputs into a single folder.</td>
+</tr>
+<tr class="odd">
+<td><strong><code>pca_analysis.R</code></strong></td>
+<td>Performs PCA for all datasets using <code>vcfR</code> and <code>dartR</code>.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="reference-based-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="reference-based-workflow">Reference-based Workflow</h2>
+<section id="filter-raw-reads" class="level3">
+<h3 class="anchored" data-anchor-id="filter-raw-reads">1. Filter Raw Reads</h3>
+<p>Reads were quality-filtered with a minimum read length of <strong>50 bp</strong>.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> sample <span class="kw">in</span> <span class="va">$(</span><span class="fu">cat</span> list_all_samples<span class="va">)</span><span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="ex">fastq-mcf</span> <span class="at">-q</span> 30 <span class="at">-l</span> 50 <span class="dt">\</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">-o</span> ./02_filtered/<span class="va">${sample}</span>.FASTQ.gz ./01_raw/<span class="va">${sample}</span>.FASTQ.gz</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ex">Scripts:</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ex">Script-get-popmap-phylo.py</span> : organize and create popmap for the datasets and get barcode for phylo data set.</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> <span class="ex">[!NOTE]</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span><span class="ex">**Data</span> sets<span class="pp">**</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>-<span class="pp">**</span>alt<span class="pp">**</span>: <span class="ex">POP</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>-<span class="pp">**</span>grp<span class="pp">**</span>: <span class="ex">Intra-P4</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>-<span class="pp">**</span>phylo<span class="pp">**</span> <span class="bu">:</span> Inter-C4</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">## Filter raw reads: </span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ex">For</span> RefMap datasets, reads with minimum of 50 pb.</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="kw">```</span><span class="fu">bash</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> sample <span class="kw">in</span> <span class="kw">`</span>cat list_all_samples<span class="kw">`;</span><span class="cf">do</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ex">fastq-mcf</span> <span class="at">-q</span> 30 <span class="at">-l</span> 50 <span class="at">-o</span> ./02_barcode-adaptor-rmv-high_50/<span class="va">${sample}</span>.FASTQ.gz ./01_RAWDATA-HIGH/<span class="va">${sample}</span>.FASTQ.gz</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>De novo - for stacks every read needs to have the same length. So we trimmed based on the size of the reads raw reads. For pop we trimmed to 100pb and for Intra-P4 and Inter-C5 for 60 pb.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> sample <span class="kw">in</span> <span class="kw">`</span><span class="fu">cat</span> list_pop<span class="kw">`;</span><span class="cf">do</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">fastq-mcf</span> <span class="at">-q</span> 30 <span class="at">-l</span> 100 <span class="at">-L</span> 100 <span class="at">-o</span> ./02_barcode-adaptor-rmv-high_50/<span class="va">${sample}</span>.FASTQ.gz ./01_RAWDATA-HIGH/<span class="va">${sample}</span>.FASTQ.gz</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> sample <span class="kw">in</span> <span class="kw">`</span><span class="fu">cat</span> list_intra-inter<span class="kw">`;</span><span class="cf">do</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ex">fastq-mcf</span> <span class="at">-q</span> 30 <span class="at">-l</span> 60 <span class="at">-L</span> 100 <span class="at">-o</span> ./02_barcode-adaptor-rmv-high_50/<span class="va">${sample}</span>.FASTQ.gz ./01_RAWDATA-HIGH/<span class="va">${sample}</span>.FASTQ.gz</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="reference-genome" class="level2">
+<h2 class="anchored" data-anchor-id="reference-genome">Reference Genome</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> sample <span class="kw">in</span> <span class="kw">`</span><span class="fu">cat</span> list-alt-grp-121<span class="kw">`;</span> <span class="cf">do</span> <span class="dt">\</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>     <span class="ex">bwa</span> mem <span class="at">-t</span> 16 00_refercence_genomes/habrochaites.fasta 02_filtered-barcode-adaptor-rmv-q30-l50/<span class="va">${sample}</span>.FASTQ.gz <span class="kw">|</span><span class="dt">\</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>     <span class="ex">samtools</span> view <span class="at">-F</span> 4 <span class="at">-Sb</span> <span class="kw">|</span><span class="dt">\</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>   <span class="ex">samtools</span> sort <span class="at">-@16</span> <span class="at">-o</span> 03_mapping-hap/<span class="va">${sample}</span>.hab.bam <span class="kw">;</span> </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>   <span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Merge all sequences:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">bamaddrg</span> <span class="at">-b</span> 2062150.hab.bam <span class="at">-s</span> 2062150-b 2062151.hab.bam <span class="at">-s</span> 2062151-b 2062152.hab.bam <span class="at">-s</span> 2062152-b 2062154.hab.bam <span class="at">-s</span> 2062154-b 2062155.hab.bam <span class="at">-s</span> 2062155-b 2062156.hab.bam <span class="at">-s</span> 2062156-b 2062157.hab.bam <span class="at">-s</span> 2062157-b 2062158.hab.bam <span class="at">-s</span> 2062158-b 2062164.hab.bam <span class="at">-s</span> 2062164-b 2062165.hab.bam <span class="at">-s</span> 2062165-b 2062166.hab.bam <span class="at">-s</span> 2062166-b 2062167.hab.bam <span class="at">-s</span> 2062167-b 2062168.hab.bam <span class="at">-s</span> 2062168-b 2062169.hab.bam <span class="at">-s</span> 2062169-b 2062170.hab.bam <span class="at">-s</span> 2062170-b 2062171.hab.bam <span class="at">-s</span> 2062171-b 2062172.hab.bam <span class="at">-s</span> 2062172-b 2062173.hab.bam <span class="at">-s</span> 2062173-b 2062174.hab.bam <span class="at">-s</span> 2062174-b 2062175.hab.bam <span class="at">-s</span> 2062175-b 2062176.hab.bam <span class="at">-s</span> 2062176-b 2062177.hab.bam <span class="at">-s</span> 2062177-b 2062178.hab.bam <span class="at">-s</span> 2062178-b 2062179.hab.bam <span class="at">-s</span> 2062179-b 2062180.hab.bam <span class="at">-s</span> 2062180-b 2062181.hab.bam <span class="at">-s</span> 2062181-b 2062182.hab.bam <span class="at">-s</span> 2062182-b 2062183.hab.bam <span class="at">-s</span> 2062183-b 2062185.hab.bam <span class="at">-s</span> 2062185-b 2062186.hab.bam <span class="at">-s</span> 2062186-b 2062187.hab.bam <span class="at">-s</span> 2062187-b 2062188.hab.bam <span class="at">-s</span> 2062188-b 2062189.hab.bam <span class="at">-s</span> 2062189-b 2062191.hab.bam <span class="at">-s</span> 2062191-b 2062192.hab.bam <span class="at">-s</span> 2062192-b 2062196.hab.bam <span class="at">-s</span> 2062196-b 2062198.hab.bam <span class="at">-s</span> 2062198-b 2062199.hab.bam <span class="at">-s</span> 2062199-b 2062200.hab.bam <span class="at">-s</span> 2062200-b 2062202.hab.bam <span class="at">-s</span> 2062202-b 2062204.hab.bam <span class="at">-s</span> 2062204-b 2062205.hab.bam <span class="at">-s</span> 2062205-b 2062206.hab.bam <span class="at">-s</span> 2062206-b 2062207.hab.bam <span class="at">-s</span> 2062207-b 2062208.hab.bam <span class="at">-s</span> 2062208-b 2062209.hab.bam <span class="at">-s</span> 2062209-b 2062210.hab.bam <span class="at">-s</span> 2062210-b 2062211.hab.bam <span class="at">-s</span> 2062211-b 2062212.hab.bam <span class="at">-s</span> 2062212-b 2062213.hab.bam <span class="at">-s</span> 2062213-b 2062215.hab.bam <span class="at">-s</span> 2062215-b 2062216.hab.bam <span class="at">-s</span> 2062216-b 2062217.hab.bam <span class="at">-s</span> 2062217-b 2062218.hab.bam <span class="at">-s</span> 2062218-b 2062219.hab.bam <span class="at">-s</span> 2062219-b 2062220.hab.bam <span class="at">-s</span> 2062220-b 2062221.hab.bam <span class="at">-s</span> 2062221-b 2062222.hab.bam <span class="at">-s</span> 2062222-b 2062223.hab.bam <span class="at">-s</span> 2062223-b 2062224.hab.bam <span class="at">-s</span> 2062224-b 2062225.hab.bam <span class="at">-s</span> 2062225-b 2062226.hab.bam <span class="at">-s</span> 2062226-b 2062227.hab.bam <span class="at">-s</span> 2062227-b 2062228.hab.bam <span class="at">-s</span> 2062228-b 2062229.hab.bam <span class="at">-s</span> 2062229-b 2062230.hab.bam <span class="at">-s</span> 2062230-b 2062231.hab.bam <span class="at">-s</span> 2062231-b 2062232.hab.bam <span class="at">-s</span> 2062232-b 2062233.hab.bam <span class="at">-s</span> 2062233-b 2062234.hab.bam <span class="at">-s</span> 2062234-b 2062235.hab.bam <span class="at">-s</span> 2062235-b 2062236.hab.bam <span class="at">-s</span> 2062236-b 2062237.hab.bam <span class="at">-s</span> 2062237-b 2062238.hab.bam <span class="at">-s</span> 2062238-b 2062239.hab.bam <span class="at">-s</span> 2062239-b 2062240.hab.bam <span class="at">-s</span> 2062240-b 2062241.hab.bam <span class="at">-s</span> 2062241-b 2062242.hab.bam <span class="at">-s</span> 2062242-b 2062343.hab.bam <span class="at">-s</span> 2062343-b 2070207.hab.bam <span class="at">-s</span> 2070207-b 2990934.hab.bam <span class="at">-s</span> 2990934-b 2990940.hab.bam <span class="at">-s</span> 2990940-b 3005839.hab.bam <span class="at">-s</span> 3005839-b 3005841.hab.bam <span class="at">-s</span> 3005841-b 3005842.hab.bam <span class="at">-s</span> 3005842-b 3005843.hab.bam <span class="at">-s</span> 3005843-b 3005851.hab.bam <span class="at">-s</span> 3005851-b 3005852.hab.bam <span class="at">-s</span> 3005852-b 3005853.hab.bam <span class="at">-s</span> 3005853-b 3005854.hab.bam <span class="at">-s</span> 3005854-b 3005855.hab.bam <span class="at">-s</span> 3005855-b 3005863.hab.bam <span class="at">-s</span> 3005863-b 3005865.hab.bam <span class="at">-s</span> 3005865-b 3005867.hab.bam <span class="at">-s</span> 3005867-b 3005874.hab.bam <span class="at">-s</span> 3005874-b 3005875.hab.bam <span class="at">-s</span> 3005875-b 3005877.hab.bam <span class="at">-s</span> 3005877-b 3005886.hab.bam <span class="at">-s</span> 3005886-b 3005887.hab.bam <span class="at">-s</span> 3005887-b 3005888.hab.bam <span class="at">-s</span> 3005888-b 3005889.hab.bam <span class="at">-s</span> 3005889-b 3005890.hab.bam <span class="at">-s</span> 3005890-b 3005891.hab.bam <span class="at">-s</span> 3005891-b 3005899.hab.bam <span class="at">-s</span> 3005899-b 3005900.hab.bam <span class="at">-s</span> 3005900-b 3005901.hab.bam <span class="at">-s</span> 3005901-b 3005902.hab.bam <span class="at">-s</span> 3005902-b 3005903.hab.bam <span class="at">-s</span> 3005903-b 3005911.hab.bam <span class="at">-s</span> 3005911-b 3005912.hab.bam <span class="at">-s</span> 3005912-b 3005914.hab.bam <span class="at">-s</span> 3005914-b 3005924.hab.bam <span class="at">-s</span> 3005924-b 3005926.hab.bam <span class="at">-s</span> 3005926-b 3006912.hab.bam <span class="at">-s</span> 3006912-b 3006928.hab.bam <span class="at">-s</span> 3006928-b 3006934.hab.bam <span class="at">-s</span> 3006934-b 3006939.hab.bam <span class="at">-s</span> 3006939-b 3006940.hab.bam <span class="at">-s</span> 3006940-b 3006944.hab.bam <span class="at">-s</span> 3006944-b 3006945.hab.bam <span class="at">-s</span> 3006945b 3006949.hab.bam <span class="at">-s</span> 300694 <span class="op">&gt;</span> all.131.alt-grp.hab.bam</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Calling the SNPs using freebayes</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">freebayes</span> <span class="at">-b</span> all.131.alt-grp.hab.bam <span class="dt">\</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>-f /data/users/sousal/03_compare_methods/00_refercence_genomes/habrochaites.fasta <span class="dt">\</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>-v ../05_freebayes/grp-alt-121.HAB.vcf <span class="dt">\</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>-m 30 <span class="at">-q</span> 30 <span class="at">--min-coverage</span> 10 <span class="at">--limit-coverage</span> 10000</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Spliting the VCF with each dataset:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">bcftools</span> view <span class="at">-S</span> ../list-alt-80 <span class="at">-o</span> ../07_filtering/alt-80-hab.vcf grp-alt-121.HAB.vcf</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">sousal@salvia:~/03_compare_methods/05_freebayes$</span> bcftools view <span class="at">-S</span> ../list-grp-41 <span class="at">-o</span> ../07_filtering/grp-41-hab.vcf grp-alt-121.HAB.vcf</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="ex">list-grp-41</span>           list-grp-41_aaxi.bam  list-grp-41_bwa.bam   list-grp-41_sec.bam</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">sousal@salvia:~/03_compare_methods/05_freebayes$</span> bcftools view <span class="at">-S</span> ../list-grp-41 <span class="at">-o</span> ../07_filtering/grp-41-hab.vcf grp-alt-121.HAB.vcf</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">sousal@salvia:~/03_compare_methods/05_freebayes$</span> bcftools view <span class="at">-S</span> ../list-grp-41 <span class="at">-o</span> ../07_filtering/grp-41-nico.vcf grp-alt-121.NICO.vcf</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">sousal@salvia:~/03_compare_methods/05_freebayes$</span> bcftools view <span class="at">-S</span> ../list-alt-80 <span class="at">-o</span> ../07_filtering/alt-80-nico.vcf grp-alt-121.NICO.vcf</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> list-hete-axil list-hete-axiII</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> list-hete-axil list-hete-secr</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> list-hete-axil list-hete-habro</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> list-hete-axil list-hete-infl</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> list-hete-axil list-hete-nico</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="fu">sed</span> <span class="at">-i</span> <span class="st">'s/axiI/secr/g'</span> list-hete-secr</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="fu">nano</span> list-hete-secr</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="fu">sed</span> <span class="at">-i</span> <span class="st">'s/axiI/habro/g'</span> list-hete-habro</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="fu">sed</span> <span class="at">-i</span> <span class="st">'s/axiI/infl/g'</span> list-hete-infl</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="fu">sed</span> <span class="at">-i</span> <span class="st">'s/axiI/nico/g'</span> list-hete-nico</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="fu">sed</span> <span class="at">-i</span> <span class="st">'s/axiI/axiII/g'</span> list-hete-axiII</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> list-phylo-secr list-phylo-axiI</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> list-phylo-secr list-phylo-axiII</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> list-phylo-secr list-phylo-habro</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> list-phylo-secr list-phylo-infl</span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> list-phylo-secr list-phylo-nico</span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a><span class="fu">sed</span> <span class="at">-i</span> <span class="st">'s/secr/axiI/g'</span> list-phylo-axiI</span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a><span class="fu">nano</span> list-phylo-secr</span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a><span class="fu">sed</span> <span class="at">-i</span> <span class="st">'s/secr/habro/g'</span> list-phylo-habro</span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a><span class="fu">sed</span> <span class="at">-i</span> <span class="st">'s/secr/infl/g'</span> list-phylo-infl</span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a><span class="fu">sed</span> <span class="at">-i</span> <span class="st">'s/secr/nico/g'</span> list-phylo-nico</span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a><span class="fu">sed</span> <span class="at">-i</span> <span class="st">'s/secr/axiII/g'</span> list-phylo-axiII</span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a><span class="ex">bcftools</span> view <span class="at">-S</span> list-hete-axil <span class="at">-o</span> ../07_filtering/hete-axiI.vcf axiI_all.vcf</span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a><span class="ex">bcftools</span> view <span class="at">-S</span> list-hete-axiII <span class="at">-o</span> ../07_filtering/hete-axiII.vcf axiII_all.vcf</span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a><span class="ex">bcftools</span> view <span class="at">-S</span> list-hete-infl <span class="at">-o</span> ../07_filtering/hete-infl.vcf infl_all.vcf</span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a><span class="ex">bcftools</span> view <span class="at">-S</span> list-hete-secr <span class="at">-o</span> ../07_filtering/hete-secr.vcf secr_all.vcf</span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a><span class="ex">bcftools</span> view <span class="at">-S</span> list-hete-habro <span class="at">-o</span> ../07_filtering/hete-habro.vcf habro_all.vcf</span>
+<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a><span class="ex">bcftools</span> view <span class="at">-S</span> list-hete-nico <span class="at">-o</span> ../07_filtering/hete-nico.vcf nico_all.vcf</span>
+<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a><span class="ex">bcftools</span> view <span class="at">-S</span> list-phylo-axiI <span class="at">-o</span> ../07_filtering/phylo-axiI.vcf axiI_all.vcf</span>
+<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a><span class="ex">bcftools</span> view <span class="at">-S</span> list-phylo-axiII <span class="at">-o</span> ../07_filtering/phylo-axiII.vcf axiII_all.vcf</span>
+<span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a><span class="ex">bcftools</span> view <span class="at">-S</span> list-phylo-infl <span class="at">-o</span> ../07_filtering/phylo-infl.vcf infl_all.vcf</span>
+<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a><span class="ex">bcftools</span> view <span class="at">-S</span> list-phylo-secr <span class="at">-o</span> ../07_filtering/phylo-secr.vcf secr_all.vcf</span>
+<span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a><span class="ex">bcftools</span> view <span class="at">-S</span> list-phylo-habro <span class="at">-o</span> ../07_filtering/phylo-habro.vcf habro_all.vcf</span>
+<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a><span class="ex">bcftools</span> view <span class="at">-S</span> list-phylo-nico <span class="at">-o</span> ../07_filtering/phylo-nico.vcf nico_all.vcf</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Filtering the vcf:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Whith maf of 0.03 for POP dataset</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> vcf <span class="kw">in</span> <span class="kw">`</span><span class="fu">cat</span> list-vcf-prefix-axi<span class="kw">`;</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="cf">do</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="ex">vcftools</span> <span class="at">--vcf</span> <span class="va">${vcf}</span>.vcf <span class="at">--out</span> <span class="va">${vcf}</span>-miss9-maf3-th100 <span class="at">--max-missing</span> 0.9 <span class="at">--max-alleles</span> 2 <span class="at">--min-alleles</span> 2 <span class="at">--remove-indels</span> <span class="at">--maf</span> 0.03 <span class="at">--thin</span> 100 <span class="at">--recode</span> <span class="at">--recode-INFO-all</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co">#with group maf is 0.05</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> vcf <span class="kw">in</span> <span class="kw">`</span><span class="fu">cat</span> list-vcf-prefix-faltante<span class="kw">`;</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="cf">do</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="ex">vcftools</span> <span class="at">--vcf</span> <span class="va">${vcf}</span>.vcf <span class="at">--out</span> <span class="va">${vcf}</span>-miss9-maf5-th100 <span class="at">--max-missing</span> 0.9 <span class="at">--max-alleles</span> 2 <span class="at">--min-alleles</span> 2 <span class="at">--remove-indels</span> <span class="at">--maf</span> 0.05 <span class="at">--thin</span> 100 <span class="at">--recode</span> <span class="at">--recode-INFO-all</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Count the number of SNPs in each VCF</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co">#files</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="va">input_file</span><span class="op">=</span><span class="va">$1</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="va">output_file</span><span class="op">=</span><span class="st">"snp_counts-96.txt"</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Counting SNPs from </span><span class="va">$input_file</span><span class="st">"</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co">#header</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="at">-e</span> <span class="st">"VCF_File\tSNP_Count"</span> <span class="op">&gt;</span> <span class="va">$output_file</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="bu">read</span> <span class="at">-r</span> <span class="va">vcf</span><span class="kw">;</span><span class="cf">do</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="va">count</span><span class="op">=</span><span class="va">$(</span><span class="fu">grep</span> <span class="at">-v</span> <span class="st">"#"</span> <span class="va">${vcf}</span>.recode.vcf <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span><span class="va">)</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="at">-e</span> <span class="st">"</span><span class="va">${vcf}</span><span class="st">\t</span><span class="va">${count}</span><span class="st">"</span> <span class="op">&gt;&gt;</span> <span class="va">$output_file</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span> <span class="op">&lt;</span><span class="st">"</span><span class="va">$input_file</span><span class="st">"</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"SNP counts saved to </span><span class="va">$output_file</span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Do the populations analysis for all vcfs:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co">#files</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co">##VCFS POP</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> vcf <span class="kw">in</span> <span class="kw">`</span><span class="fu">cat</span> ../../list-vcf-alt80<span class="kw">`;</span> <span class="cf">do</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="ex">populations</span> <span class="at">-V</span> /data/users/sousal/03_compare_methods/07_filtering/<span class="va">${vcf}</span>-maf5-th100.recode.vcf <span class="at">-O</span> <span class="va">$vcf</span> <span class="at">-M</span> ../../popmap-alt80 <span class="at">--fstats</span> <span class="at">-t</span> 18 </span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="co">##VCFs INTRA-P4</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> vcf <span class="kw">in</span> <span class="kw">`</span><span class="fu">cat</span> ../../list-vcf-grp41<span class="kw">`;</span> <span class="cf">do</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    <span class="ex">populations</span> <span class="at">-V</span> /data/users/sousal/03_compare_methods/07_filtering/<span class="va">${vcf}</span>-maf5-th100.recode.vcf <span class="at">-O</span> <span class="va">$vcf</span> <span class="at">-M</span> ../../popmap-grp41 <span class="at">--fstats</span> <span class="at">-t</span> 18 </span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="co">#VCFs INTER-C5</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>    <span class="co">#axiII</span></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> vcf <span class="kw">in</span> <span class="kw">`</span><span class="fu">cat</span> list-vcf-axiII<span class="kw">`;</span> <span class="cf">do</span></span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>    <span class="ex">populations</span> <span class="at">-V</span> /data/users/sousal/03_compare_methods/07_filtering/<span class="va">${vcf}</span>-maf5-th100.recode.vcf <span class="at">-O</span> <span class="va">$vcf</span> <span class="at">-M</span> ../../popmap-phylo-axiII <span class="at">--fstats</span> <span class="at">-t</span> 18 </span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>    <span class="co">#axiI</span></span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> vcf <span class="kw">in</span> <span class="kw">`</span><span class="fu">cat</span> list-vcf-axiI<span class="kw">`;</span> <span class="cf">do</span></span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>    <span class="ex">populations</span> <span class="at">-V</span> /data/users/sousal/03_compare_methods/07_filtering/<span class="va">${vcf}</span>-maf5-th100.recode.vcf <span class="at">-O</span> <span class="va">$vcf</span> <span class="at">-M</span> ../../popmap-phylo-axiI <span class="at">--fstats</span> <span class="at">-t</span> 18 </span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>    <span class="co">#infl</span></span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> vcf <span class="kw">in</span> <span class="kw">`</span><span class="fu">cat</span> list-vcf-infl<span class="kw">`;</span> <span class="cf">do</span></span>
+<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>    <span class="ex">populations</span> <span class="at">-V</span> /data/users/sousal/03_compare_methods/07_filtering/<span class="va">${vcf}</span>-maf5-th100.recode.vcf <span class="at">-O</span> <span class="va">$vcf</span> <span class="at">-M</span> ../../popmap-phylo-infl <span class="at">--fstats</span> <span class="at">-t</span> 18 </span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span>
+<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>    <span class="co">#nico</span></span>
+<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> vcf <span class="kw">in</span> <span class="kw">`</span><span class="fu">cat</span> list-vcf-nico<span class="kw">`;</span> <span class="cf">do</span></span>
+<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a>    <span class="ex">populations</span> <span class="at">-V</span> /data/users/sousal/03_compare_methods/07_filtering/<span class="va">${vcf}</span>-maf5-th100.recode.vcf <span class="at">-O</span> <span class="va">$vcf</span> <span class="at">-M</span> ../../popmap-phylo-nico <span class="at">--fstats</span> <span class="at">-t</span> 18 </span>
+<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span>
+<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a>    <span class="co">#secr</span></span>
+<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> vcf <span class="kw">in</span> <span class="kw">`</span><span class="fu">cat</span> list-vcf-secr<span class="kw">`;</span> <span class="cf">do</span></span>
+<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a>    <span class="ex">populations</span> <span class="at">-V</span> /data/users/sousal/03_compare_methods/07_filtering/<span class="va">${vcf}</span>-maf5-th100.recode.vcf <span class="at">-O</span> <span class="va">$vcf</span> <span class="at">-M</span> ../../popmap-phylo-secr <span class="at">--fstats</span> <span class="at">-t</span> 18 </span>
+<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span>
+<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a>    <span class="co">#habro</span></span>
+<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> vcf <span class="kw">in</span> <span class="kw">`</span><span class="fu">cat</span> list-vcf-habro<span class="kw">`;</span> <span class="cf">do</span></span>
+<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a>    <span class="ex">populations</span> <span class="at">-V</span> /data/users/sousal/03_compare_methods/07_filtering/<span class="va">${vcf}</span>-maf5-th100.recode.vcf <span class="at">-O</span> <span class="va">$vcf</span> <span class="at">-M</span> ../../popmap-phylo-habro <span class="at">--fstats</span> <span class="at">-t</span> 18 </span>
+<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Extract the results in one folder:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> prefix <span class="kw">in</span> <span class="kw">`</span><span class="fu">cat</span> ../../list-vcf-72-prefix2<span class="kw">`;</span> <span class="cf">do</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="va">$prefix</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> <span class="va">${prefix}</span>-maf5-th100.recode.p.sumstats_summary.tsv <span class="va">${prefix}</span>-maf5-th100.recode.p.fst_summary.tsv ../RESULTS/</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ../</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>PCA for everyone:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/bin/env Rscript</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Carregar pacotes necessários</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(vcfR)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(adegenet)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dartR)</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Captura os argumentos de linha de comando</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>args <span class="ot">&lt;-</span> <span class="fu">commandArgs</span>(<span class="at">trailingOnly =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">length</span>(args) <span class="sc">&lt;</span> <span class="dv">1</span>) {</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stop</span>(<span class="st">"Uso: Rscript script.R &lt;arquivo_com_lista_de_prefixos&gt;"</span>)</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a><span class="co"># O primeiro argumento é o arquivo com a lista de prefixos</span></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>prefix_list_file <span class="ot">&lt;-</span> args[<span class="dv">1</span>]</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Ler os prefixos do arquivo (um por linha)</span></span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>prefixos <span class="ot">&lt;-</span> <span class="fu">readLines</span>(prefix_list_file)</span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop para processar cada prefixo</span></span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (prefix <span class="cf">in</span> prefixos) {</span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Definir os caminhos dos arquivos baseado no prefixo</span></span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Aqui, adicionamos "-maf5-th100.recode.vcf" ao nome do VCF</span></span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>  vcf_file <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"/data/users/sousal/03_compare_methods/07_filtering/"</span>,prefix, <span class="st">"-maf5-th100.recode.vcf"</span>)</span>
+<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Reading"</span>, prefix, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Para o popmap, usamos os 5 primeiros caracteres do prefixo (ajuste se necessário)</span></span>
+<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a>  popmap_file <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"../popmap-"</span>, <span class="fu">substr</span>(prefix, <span class="dv">1</span>, <span class="dv">11</span>))</span>
+<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb11-31"><a href="#cb11-31" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Define os nomes dos arquivos de saída</span></span>
+<span id="cb11-32"><a href="#cb11-32" aria-hidden="true" tabindex="-1"></a>  output_svg <span class="ot">&lt;-</span> <span class="fu">paste0</span>(prefix, <span class="st">".svg"</span>)</span>
+<span id="cb11-33"><a href="#cb11-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-34"><a href="#cb11-34" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Ler o VCF e convertê-lo para objeto genlight</span></span>
+<span id="cb11-35"><a href="#cb11-35" aria-hidden="true" tabindex="-1"></a>  vcf <span class="ot">&lt;-</span> <span class="fu">read.vcfR</span>(vcf_file)</span>
+<span id="cb11-36"><a href="#cb11-36" aria-hidden="true" tabindex="-1"></a>  vcf_gl <span class="ot">&lt;-</span> <span class="fu">vcfR2genlight</span>(vcf)</span>
+<span id="cb11-37"><a href="#cb11-37" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb11-38"><a href="#cb11-38" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Ler o popmap e definir a população</span></span>
+<span id="cb11-39"><a href="#cb11-39" aria-hidden="true" tabindex="-1"></a>  vcf_gl<span class="sc">$</span>other<span class="sc">$</span>loc.metrics <span class="ot">&lt;-</span> <span class="fu">read.table</span>(popmap_file, <span class="at">header =</span> <span class="cn">FALSE</span>, <span class="at">sep =</span> <span class="st">"</span><span class="sc">\t</span><span class="st">"</span>)</span>
+<span id="cb11-40"><a href="#cb11-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pop</span>(vcf_gl) <span class="ot">&lt;-</span> vcf_gl<span class="sc">$</span>other<span class="sc">$</span>loc.metrics<span class="sc">$</span>V2</span>
+<span id="cb11-41"><a href="#cb11-41" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb11-42"><a href="#cb11-42" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Realizar a PCA (ajuste o número de componentes, se necessário)</span></span>
+<span id="cb11-43"><a href="#cb11-43" aria-hidden="true" tabindex="-1"></a>  pca1 <span class="ot">&lt;-</span> <span class="fu">glPca</span>(vcf_gl, <span class="at">nf =</span> <span class="dv">2</span>)</span>
+<span id="cb11-44"><a href="#cb11-44" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb11-45"><a href="#cb11-45" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Gerar o gráfico de PCA usando gl.pcoa.plot</span></span>
+<span id="cb11-46"><a href="#cb11-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">svg</span>(output_svg, <span class="at">width =</span> <span class="dv">8</span>, <span class="at">height =</span> <span class="dv">7</span>)</span>
+<span id="cb11-47"><a href="#cb11-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gl.pcoa.plot</span>(pca1, vcf_gl, <span class="at">pop.labels =</span> <span class="st">"pop"</span>, <span class="at">xaxis =</span> <span class="dv">1</span>, <span class="at">yaxis =</span> <span class="dv">2</span>, <span class="at">pt.size =</span> <span class="dv">6</span>, <span class="at">label.size =</span> <span class="dv">2</span>)</span>
+<span id="cb11-48"><a href="#cb11-48" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dev.off</span>()</span>
+<span id="cb11-49"><a href="#cb11-49" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb11-50"><a href="#cb11-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"Processado:"</span>, prefix, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb11-51"><a href="#cb11-51" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb11-52"><a href="#cb11-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-53"><a href="#cb11-53" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Processamento concluído!</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="de-novo-approach" class="level1">
+<h1><em>de novo</em> approach</h1>
+<p>We performed the de novo analysis using Stacks, following the pipeline described by Rivera-Colón and Catchen (2022). SNPs were identified using the denovo_map.pl module.</p>
+<p>Parameter optimization was carried out on a subset of 20 individuals, running the de novo pipeline multiple times with increasing values of M and n (from 1 to 9). This optimization seeks the combination of parameters that maximizes the number of R80 loci—polymorphic loci present in at least 80% of the samples.</p>
+<section id="parameter-optimization" class="level3">
+<h3 class="anchored" data-anchor-id="parameter-optimization">Parameter optimization</h3>
+<p>For each dataset, we ran the following shell script <code>opt-denvo-alt|grp|phylo</code>:</p>
+<pre class="shell"><code>#!/bin/bash
+    for n in 1 2 3 4 5 6 7 8 9 10;
+    do
+        out=denovo-ALT.M${n}.n${n};
+        echo $out;
+        mkdir -p $out;
+        denovo_map.pl --samples ../../02_filtered-adaptor-rmv-q30-l60-L60/  --popmap ../popmap-sub20-alti.txt -o ./$out -M $n -n $n -T 14 --min-samples-per-pop 0.8;
+    done</code></pre>
+<section id="result" class="level4">
+<h4 class="anchored" data-anchor-id="result">Result</h4>
+The optimal parameters identified were -M 3 -n 3, which were used for all groups.
+<center>
+<figure class="figure">
+<img src="00.OPT-denovo/Result-graph_optmization_denovo_MN.png" width="550" alt="Output *de novo* optimization" class="figure-img">
+</figure>
+</center>
+</section>
+</section>
+<section id="analysis" class="level3">
+<h3 class="anchored" data-anchor-id="analysis">Analysis</h3>
+<p>After the optimized de novo assembly, we conducted:</p>
+<blockquote class="blockquote">
+<p><strong>PCA</strong></p>
+<p><strong>fastSTRUCTURE</strong></p>
+<p><strong>SPLITSTREE</strong></p>
+<p><strong>Summary statistics</strong></p>
+</blockquote>
+<p>All notebooks and scripts are named according to their corresponding analyses.</p>
+</section>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
+<p>Rivera-Colón, A. G. &amp; Catchen, J. Population genomics analysis with RAD, reprised: Stacks 2. Methods Mol. Biol. 2498, 99–149 (2022).</p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

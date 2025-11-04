@@ -1,0 +1,46 @@
+,Grupo,.y.,group1,group2,n1,n2,statistic,p,p.adj,p.adj.signif
+1,POP,mapping,N. sylvestris,P. axillaris I,80,80,0,7.68E-15,1.15E-13,****
+2,POP,mapping,N. sylvestris,P. axillaris II,80,80,0,7.72E-15,1.16E-13,****
+3,POP,mapping,N. sylvestris,P. inflata,80,80,0,7.59E-15,1.14E-13,****
+4,POP,mapping,N. sylvestris,P. secreta,80,80,0,7.63E-15,1.14E-13,****
+5,POP,mapping,N. sylvestris,S. habrochaites,80,80,3240,6.40E-15,9.60E-14,****
+6,POP,mapping,P. axillaris I,P. axillaris II,80,80,7,0.016,0.236,ns
+7,POP,mapping,P. axillaris I,P. inflata,80,80,0,1.88E-15,2.82E-14,****
+8,POP,mapping,P. axillaris I,P. secreta,80,80,0,4.18E-05,0.000627,***
+9,POP,mapping,P. axillaris I,S. habrochaites,80,80,3240,7.78E-15,1.17E-13,****
+10,POP,mapping,P. axillaris II,P. inflata,80,80,0,2.11E-15,3.16E-14,****
+11,POP,mapping,P. axillaris II,P. secreta,80,80,6,0.012,0.182,ns
+12,POP,mapping,P. axillaris II,S. habrochaites,80,80,3240,7.73E-15,1.16E-13,****
+13,POP,mapping,P. inflata,P. secreta,80,80,3240,2.99E-15,4.48E-14,****
+14,POP,mapping,P. inflata,S. habrochaites,80,80,3240,7.76E-15,1.16E-13,****
+15,POP,mapping,P. secreta,S. habrochaites,80,80,3240,7.73E-15,1.16E-13,****
+16,Intra-P4,mapping,N. sylvestris,P. axillaris I,41,41,0,2.49E-08,3.74E-07,****
+17,Intra-P4,mapping,N. sylvestris,P. axillaris II,41,41,0,2.49E-08,3.74E-07,****
+18,Intra-P4,mapping,N. sylvestris,P. inflata,41,41,0,2.49E-08,3.74E-07,****
+19,Intra-P4,mapping,N. sylvestris,P. secreta,41,41,0,2.49E-08,3.74E-07,****
+20,Intra-P4,mapping,N. sylvestris,S. habrochaites,41,41,861,2.05E-08,3.08E-07,****
+21,Intra-P4,mapping,P. axillaris I,P. axillaris II,41,41,1.5,1,1,ns
+22,Intra-P4,mapping,P. axillaris I,P. inflata,41,41,0,1.19E-08,1.79E-07,****
+23,Intra-P4,mapping,P. axillaris I,P. secreta,41,41,0,0.003,0.05,ns
+24,Intra-P4,mapping,P. axillaris I,S. habrochaites,41,41,861,2.49E-08,3.74E-07,****
+25,Intra-P4,mapping,P. axillaris II,P. inflata,41,41,0,9.76E-09,1.46E-07,****
+26,Intra-P4,mapping,P. axillaris II,P. secreta,41,41,0,0.003,0.05,ns
+27,Intra-P4,mapping,P. axillaris II,S. habrochaites,41,41,861,2.49E-08,3.74E-07,****
+28,Intra-P4,mapping,P. inflata,P. secreta,41,41,861,1.46E-08,2.19E-07,****
+29,Intra-P4,mapping,P. inflata,S. habrochaites,41,41,861,2.50E-08,3.75E-07,****
+30,Intra-P4,mapping,P. secreta,S. habrochaites,41,41,861,2.48E-08,3.72E-07,****
+31,phylo,mapping,N. sylvestris,P. axillaris I,29,29,0,2.67E-06,4.00E-05,****
+32,phylo,mapping,N. sylvestris,P. axillaris II,29,29,0,2.67E-06,4.00E-05,****
+33,phylo,mapping,N. sylvestris,P. inflata,29,29,0,2.68E-06,4.02E-05,****
+34,phylo,mapping,N. sylvestris,P. secreta,29,29,0,2.66E-06,3.99E-05,****
+35,phylo,mapping,N. sylvestris,S. habrochaites,29,29,435,2.13E-06,3.20E-05,****
+36,phylo,mapping,P. axillaris I,P. axillaris II,29,29,3,0.346,1,ns
+37,phylo,mapping,P. axillaris I,P. inflata,29,29,0,6.65E-06,9.98E-05,****
+38,phylo,mapping,P. axillaris I,P. secreta,29,29,0,0.346,1,ns
+39,phylo,mapping,P. axillaris I,S. habrochaites,29,29,435,2.67E-06,4.00E-05,****
+40,phylo,mapping,P. axillaris II,P. inflata,29,29,0,5.45E-06,8.18E-05,****
+41,phylo,mapping,P. axillaris II,P. secreta,29,29,0,0.072,1,ns
+42,phylo,mapping,P. axillaris II,S. habrochaites,29,29,435,2.67E-06,4.00E-05,****
+43,phylo,mapping,P. inflata,P. secreta,29,29,210,1.87E-05,0.00028,***
+44,phylo,mapping,P. inflata,S. habrochaites,29,29,435,2.68E-06,4.02E-05,****
+45,phylo,mapping,P. secreta,S. habrochaites,29,29,435,2.68E-06,4.02E-05,****

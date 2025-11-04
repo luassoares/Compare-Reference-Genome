@@ -1,0 +1,432 @@
+### Results from RESULT_alt-80-aaxi-miss5.str ###
+Model complexity that maximizes marginal likelihood = 2
+Model components used to explain structure in data = 4
+
+---------------------
+
+### Results from RESULT_alt-80-aaxi-miss8.str ###
+Model complexity that maximizes marginal likelihood = 2
+Model components used to explain structure in data = 4
+
+---------------------
+
+### Results from RESULT_alt-80-aaxi-miss95.str ###
+Model complexity that maximizes marginal likelihood = 2
+Model components used to explain structure in data = 6
+
+---------------------
+
+### Results from RESULT_alt-80-aaxi-miss9.str ###
+Model complexity that maximizes marginal likelihood = 2
+Model components used to explain structure in data = 4
+
+---------------------
+
+### Results from RESULT_alt-80-axi-miss5.str ###
+Model complexity that maximizes marginal likelihood = 2
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_alt-80-axi-miss8.str ###
+Model complexity that maximizes marginal likelihood = 2
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_alt-80-axi-miss95.str ###
+Model complexity that maximizes marginal likelihood = 2
+Model components used to explain structure in data = 6
+
+---------------------
+
+### Results from RESULT_alt-80-axi-miss9.str ###
+Model complexity that maximizes marginal likelihood = 2
+Model components used to explain structure in data = 4
+
+---------------------
+
+### Results from RESULT_alt-80-hab-miss5.str ###
+Model complexity that maximizes marginal likelihood = 2
+Model components used to explain structure in data = 6
+
+---------------------
+
+### Results from RESULT_alt-80-hab-miss8.str ###
+Model complexity that maximizes marginal likelihood = 2
+Model components used to explain structure in data = 8
+
+---------------------
+
+### Results from RESULT_alt-80-hab-miss95.str ###
+Model complexity that maximizes marginal likelihood = 2
+Model components used to explain structure in data = 4
+
+---------------------
+
+### Results from RESULT_alt-80-hab-miss9.str ###
+Model complexity that maximizes marginal likelihood = 3
+Model components used to explain structure in data = 6
+
+---------------------
+
+### Results from RESULT_alt-80-inf-miss5.str ###
+Model complexity that maximizes marginal likelihood = 2
+Model components used to explain structure in data = 4
+
+---------------------
+
+### Results from RESULT_alt-80-inf-miss8.str ###
+Model complexity that maximizes marginal likelihood = 2
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_alt-80-inf-miss95.str ###
+Model complexity that maximizes marginal likelihood = 2
+Model components used to explain structure in data = 6
+
+---------------------
+
+### Results from RESULT_alt-80-inf-miss9.str ###
+Model complexity that maximizes marginal likelihood = 2
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_alt-80-nico-miss5.str ###
+Model complexity that maximizes marginal likelihood = 2
+Model components used to explain structure in data = 6
+
+---------------------
+
+### Results from RESULT_alt-80-nico-miss8.str ###
+Model complexity that maximizes marginal likelihood = 2
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_alt-80-nico-miss95.str ###
+Model complexity that maximizes marginal likelihood = 2
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_alt-80-nico-miss9.str ###
+Model complexity that maximizes marginal likelihood = 2
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_alt-80-sec-miss5.str ###
+Model complexity that maximizes marginal likelihood = 2
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_alt-80-sec-miss8.str ###
+Model complexity that maximizes marginal likelihood = 2
+Model components used to explain structure in data = 4
+
+---------------------
+
+### Results from RESULT_alt-80-sec-miss95.str ###
+Model complexity that maximizes marginal likelihood = 2
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_alt-80-sec-miss9.str ###
+Model complexity that maximizes marginal likelihood = 2
+Model components used to explain structure in data = 4
+
+---------------------
+
+### Results from RESULT_grp-41-aaxi-miss5.str ###
+Model complexity that maximizes marginal likelihood = 5
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_grp-41-aaxi-miss8.str ###
+Model complexity that maximizes marginal likelihood = 5
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_grp-41-aaxi-miss95.str ###
+Model complexity that maximizes marginal likelihood = 5
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_grp-41-aaxi-miss9.str ###
+Model complexity that maximizes marginal likelihood = 6
+Model components used to explain structure in data = 6
+
+---------------------
+
+### Results from RESULT_grp-41-axi-miss5.str ###
+Model complexity that maximizes marginal likelihood = 5
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_grp-41-axi-miss8.str ###
+Model complexity that maximizes marginal likelihood = 5
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_grp-41-axi-miss95.str ###
+Model complexity that maximizes marginal likelihood = 5
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_grp-41-axi-miss9.str ###
+Model complexity that maximizes marginal likelihood = 10
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_grp-41-hab-miss5.str ###
+Model complexity that maximizes marginal likelihood = 7
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_grp-41-hab-miss8.str ###
+Model complexity that maximizes marginal likelihood = 5
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_grp-41-hab-miss95.str ###
+Model complexity that maximizes marginal likelihood = 3
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_grp-41-hab-miss9.str ###
+Model complexity that maximizes marginal likelihood = 5
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_grp-41-inf-miss5.str ###
+Model complexity that maximizes marginal likelihood = 5
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_grp-41-inf-miss8.str ###
+Model complexity that maximizes marginal likelihood = 5
+Model components used to explain structure in data = 6
+
+---------------------
+
+### Results from RESULT_grp-41-inf-miss95.str ###
+Model complexity that maximizes marginal likelihood = 4
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_grp-41-inf-miss9.str ###
+Model complexity that maximizes marginal likelihood = 4
+Model components used to explain structure in data = 6
+
+---------------------
+
+### Results from RESULT_grp-41-nico-miss5.str ###
+Model complexity that maximizes marginal likelihood = 5
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_grp-41-nico-miss8.str ###
+Model complexity that maximizes marginal likelihood = 8
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_grp-41-nico-miss95.str ###
+Model complexity that maximizes marginal likelihood = 4
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_grp-41-nico-miss9.str ###
+Model complexity that maximizes marginal likelihood = 5
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_grp-41-sec-miss5.str ###
+Model complexity that maximizes marginal likelihood = 5
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_grp-41-sec-miss8.str ###
+Model complexity that maximizes marginal likelihood = 5
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_grp-41-sec-miss95.str ###
+Model complexity that maximizes marginal likelihood = 4
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_grp-41-sec-miss9.str ###
+Model complexity that maximizes marginal likelihood = 6
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_phylo-axiII-miss5.str ###
+Model complexity that maximizes marginal likelihood = 4
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_phylo-axiII-miss8.str ###
+Model complexity that maximizes marginal likelihood = 4
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_phylo-axiII-miss95.str ###
+Model complexity that maximizes marginal likelihood = 4
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_phylo-axiII-miss9.str ###
+Model complexity that maximizes marginal likelihood = 8
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_phylo-axiI-miss5.str ###
+Model complexity that maximizes marginal likelihood = 4
+Model components used to explain structure in data = 4
+
+---------------------
+
+### Results from RESULT_phylo-axiI-miss8.str ###
+Model complexity that maximizes marginal likelihood = 5
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_phylo-axiI-miss95.str ###
+Model complexity that maximizes marginal likelihood = 5
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_phylo-axiI-miss9.str ###
+Model complexity that maximizes marginal likelihood = 4
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_phylo-habro-miss5.str ###
+Model complexity that maximizes marginal likelihood = 4
+Model components used to explain structure in data = 4
+
+---------------------
+
+### Results from RESULT_phylo-habro-miss8.str ###
+Model complexity that maximizes marginal likelihood = 5
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_phylo-habro-miss95.str ###
+Model complexity that maximizes marginal likelihood = 4
+Model components used to explain structure in data = 4
+
+---------------------
+
+### Results from RESULT_phylo-habro-miss9.str ###
+Model complexity that maximizes marginal likelihood = 4
+Model components used to explain structure in data = 4
+
+---------------------
+
+### Results from RESULT_phylo-infl-miss5.str ###
+Model complexity that maximizes marginal likelihood = 4
+Model components used to explain structure in data = 4
+
+---------------------
+
+### Results from RESULT_phylo-infl-miss8.str ###
+Model complexity that maximizes marginal likelihood = 4
+Model components used to explain structure in data = 4
+
+---------------------
+
+### Results from RESULT_phylo-infl-miss95.str ###
+Model complexity that maximizes marginal likelihood = 4
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_phylo-infl-miss9.str ###
+Model complexity that maximizes marginal likelihood = 4
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_phylo-nico-miss5.str ###
+Model complexity that maximizes marginal likelihood = 4
+Model components used to explain structure in data = 4
+
+---------------------
+
+### Results from RESULT_phylo-nico-miss8.str ###
+Model complexity that maximizes marginal likelihood = 4
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_phylo-nico-miss95.str ###
+Model complexity that maximizes marginal likelihood = 4
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_phylo-nico-miss9.str ###
+Model complexity that maximizes marginal likelihood = 4
+Model components used to explain structure in data = 4
+
+---------------------
+
+### Results from RESULT_phylo-secr-miss5.str ###
+Model complexity that maximizes marginal likelihood = 7
+Model components used to explain structure in data = 4
+
+---------------------
+
+### Results from RESULT_phylo-secr-miss8.str ###
+Model complexity that maximizes marginal likelihood = 6
+Model components used to explain structure in data = 4
+
+---------------------
+
+### Results from RESULT_phylo-secr-miss95.str ###
+Model complexity that maximizes marginal likelihood = 4
+Model components used to explain structure in data = 5
+
+---------------------
+
+### Results from RESULT_phylo-secr-miss9.str ###
+Model complexity that maximizes marginal likelihood = 4
+Model components used to explain structure in data = 5
+
+---------------------
+

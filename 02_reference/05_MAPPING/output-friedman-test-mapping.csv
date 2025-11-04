@@ -1,0 +1,4 @@
+"","Grupo",".y.","n","statistic","df","p","method"
+"1","alt80","mapping",80,391.94018103109,5,1.61897256271673e-82,"Friedman test"
+"2","grp41","mapping",41,201.206764027671,5,1.56764637370844e-41,"Friedman test"
+"3","phylo","mapping",29,137.344827586207,5,6.56051765144411e-28,"Friedman test"

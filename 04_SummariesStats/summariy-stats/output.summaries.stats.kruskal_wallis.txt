@@ -1,0 +1,88 @@
+================================================================================
+SUMMARY
+================================================================================
+
+PHYLO:
+  - fis: Genomes do NOT differ significantly
+    H = 7.261, p = 0.2974
+  - obs_het: Genomes DIFFER significantly
+    H = 26.593, p = 0.0002
+    Significant pairs:
+      • inf vs hab: p = 0.0079
+      • inf vs nico: p = 0.0079
+      • inf vs denovo: p = 0.0079
+      • aaxi vs hab: p = 0.0079
+      • aaxi vs nico: p = 0.0079
+      • aaxi vs denovo: p = 0.0079
+      • axi vs hab: p = 0.0079
+      • axi vs nico: p = 0.0079
+      • axi vs denovo: p = 0.0160
+      • hab vs sec: p = 0.0079
+      • hab vs denovo: p = 0.0159
+      • nico vs sec: p = 0.0079
+      • nico vs denovo: p = 0.0159
+      • sec vs denovo: p = 0.0317
+  - pi: Genomes DIFFER significantly
+    H = 16.579, p = 0.0110
+    Significant pairs:
+      • inf vs hab: p = 0.0159
+      • inf vs nico: p = 0.0317
+      • aaxi vs hab: p = 0.0159
+      • axi vs hab: p = 0.0159
+      • hab vs sec: p = 0.0159
+      • hab vs denovo: p = 0.0079
+      • nico vs denovo: p = 0.0317
+  - private: Genomes DIFFER significantly
+    H = 23.756, p = 0.0006
+    Significant pairs:
+      • inf vs hab: p = 0.0079
+      • inf vs nico: p = 0.0079
+      • aaxi vs hab: p = 0.0079
+      • aaxi vs nico: p = 0.0079
+      • axi vs hab: p = 0.0079
+      • axi vs nico: p = 0.0079
+      • hab vs sec: p = 0.0079
+      • hab vs denovo: p = 0.0079
+      • nico vs sec: p = 0.0079
+      • nico vs denovo: p = 0.0079
+
+GRP:
+  - fis: Genomes do NOT differ significantly
+    H = 1.300, p = 0.9716
+  - obs_het: Genomes DIFFER significantly
+    H = 20.475, p = 0.0023
+    Significant pairs:
+      • hab vs sec: p = 0.0286
+      • hab vs inf: p = 0.0286
+      • hab vs axi: p = 0.0286
+      • hab vs aaxi: p = 0.0286
+      • hab vs denovo: p = 0.0286
+      • sec vs nico: p = 0.0286
+      • inf vs nico: p = 0.0286
+      • axi vs nico: p = 0.0286
+      • nico vs aaxi: p = 0.0286
+      • nico vs denovo: p = 0.0286
+  - pi: Genomes do NOT differ significantly
+    H = 11.712, p = 0.0687
+  - private: Genomes DIFFER significantly
+    H = 19.742, p = 0.0031
+    Significant pairs:
+      • hab vs sec: p = 0.0286
+      • hab vs inf: p = 0.0286
+      • hab vs axi: p = 0.0286
+      • hab vs aaxi: p = 0.0286
+      • sec vs denovo: p = 0.0286
+      • inf vs denovo: p = 0.0286
+      • axi vs denovo: p = 0.0286
+      • nico vs denovo: p = 0.0421
+      • aaxi vs denovo: p = 0.0286
+
+ALT:
+  - fis: Genomes do NOT differ significantly
+    H = 5.610, p = 0.4683
+  - obs_het: Genomes DIFFER significantly
+    H = 14.684, p = 0.0229
+  - pi: Genomes do NOT differ significantly
+    H = 10.909, p = 0.0912
+  - private: Genomes DIFFER significantly
+    H = 17.711, p = 0.0070
