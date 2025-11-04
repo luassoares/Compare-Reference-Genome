@@ -1,4 +1,4 @@
-# 02_RefGeno_analysis
+# Reference Genome
 
 ## Overview
 This folder contains genomic analyses based on reference genome data, focusing on population structure, genetic diversity, and phylogenetic relationships. It includes results from tools such as Stacks, PCA, fastSTRUCTURE, and SPLISTREE, applied to various datasets (e.g., alt80, grp41, phylo).
